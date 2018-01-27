@@ -104,4 +104,8 @@ public class movControl : MonoBehaviour
 		
 	}
 
+	public void boom(){
+		GameManager.instance.onDead (transform.position);
+	}
+
 }

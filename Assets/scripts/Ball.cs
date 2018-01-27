@@ -51,10 +51,14 @@ public class Ball : MonoBehaviour
 		if (coll.gameObject.tag == "Paddle") {
 			Paddle paddle = coll.gameObject.GetComponent<Paddle> ();
 			paddleBounce (paddle);
-		}
-
-		if (coll.gameObject.tag == "BallDeadZone") {
+		} else if (coll.gameObject.tag == "BallDeadZone") {
 			resetBall ();
+		}
+		else if (coll.gameObject.tag == "Wall") {
+			resetBall ();
+		}else {
+			coll.gameObject.SendMessage ("boom");
+			this.gameObject.SetActive (false);
 		}
 	}
 
