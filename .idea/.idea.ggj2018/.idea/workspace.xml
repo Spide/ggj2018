@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a70138ee-0ead-4322-8d4d-7b9c5604f830" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.ggj2018/.idea/contentModel.xml" afterPath="$PROJECT_DIR$/.idea/.idea.ggj2018/.idea/contentModel.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.ggj2018/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.ggj2018/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/scenes/Background.unity" afterPath="$PROJECT_DIR$/Assets/scenes/Background.unity" />
     </list>
@@ -15,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Levitating.cs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Levitating.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/scripts/Levitating.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="964">
-              <caret line="49" column="2" lean-forward="false" selection-start-line="49" selection-start-column="2" selection-end-line="49" selection-end-column="2" />
+            <state relative-caret-position="-570">
+              <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
               <folding>
                 <marker date="1517079957581" expanded="true" signature="59:1339" ph="{...}" />
                 <marker date="1517079957581" expanded="true" signature="478:771" ph="{...}" />
@@ -40,7 +39,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlayButton.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PlayButton.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../../LD40/LD40/Assets/scripts/PlayButton.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-440">
@@ -250,24 +249,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../../LD40/LD40/Assets/scripts/PlayButton.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-440">
+          <caret line="46" column="36" lean-forward="false" selection-start-line="39" selection-start-column="7" selection-end-line="46" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/scripts/Levitating.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="964">
-          <caret line="49" column="2" lean-forward="false" selection-start-line="49" selection-start-column="2" selection-end-line="49" selection-end-column="2" />
+        <state relative-caret-position="-570">
+          <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
           <folding>
             <marker date="1517079957581" expanded="true" signature="59:1339" ph="{...}" />
             <marker date="1517079957581" expanded="true" signature="478:771" ph="{...}" />
             <marker date="1517079957581" expanded="true" signature="823:1337" ph="{...}" />
             <marker date="1517079957581" expanded="true" signature="1106:1303" ph="/* p.x = Mathf.Round(p.x+parent.position.x * pixelsPerUnit) / pixelsPerUnit - parent.position.x; ... */" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../LD40/LD40/Assets/scripts/PlayButton.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-440">
-          <caret line="46" column="36" lean-forward="false" selection-start-line="39" selection-start-column="7" selection-end-line="46" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
