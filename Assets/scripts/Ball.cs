@@ -72,7 +72,7 @@ public class Ball : MonoBehaviour
 		float X = 0;
 
 		// calc angle
-		X = -(paddle.transform.position - transform.position).x * paddleDragMultiplier;
+	//	X = -(paddle.transform.position - transform.position).x * paddleDragMultiplier;
 
 		// add velocity of paddle
 		X = X + (paddle.FakeVelocity.x * velocityDragMultiplier);

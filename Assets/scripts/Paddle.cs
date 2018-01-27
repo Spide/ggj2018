@@ -28,6 +28,7 @@ public class Paddle : MonoBehaviour {
 		lastPosition = transform.position;
 
 		ballSpawnPoint = transform.Find ("BallSpawnPoint");
+			
 	}
 
 	// Update is called once per frame

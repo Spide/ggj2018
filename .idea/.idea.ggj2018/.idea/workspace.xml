@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a70138ee-0ead-4322-8d4d-7b9c5604f830" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.ggj2018/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.ggj2018/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/scenes/Background.unity" afterPath="$PROJECT_DIR$/Assets/scenes/Background.unity" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/scripts/Ball.cs" afterPath="$PROJECT_DIR$/Assets/scripts/Ball.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/scripts/Paddle.cs" afterPath="$PROJECT_DIR$/Assets/scripts/Paddle.cs" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,7 +15,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Levitating.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Levitating.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/scripts/Levitating.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-570">
@@ -24,6 +25,56 @@
                 <marker date="1517079957581" expanded="true" signature="478:771" ph="{...}" />
                 <marker date="1517079957581" expanded="true" signature="823:1337" ph="{...}" />
                 <marker date="1517079957581" expanded="true" signature="1106:1303" ph="/* p.x = Mathf.Round(p.x+parent.position.x * pixelsPerUnit) / pixelsPerUnit - parent.position.x; ... */" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Paddle.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/scripts/Paddle.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="30" column="4" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+              <folding>
+                <marker date="1517082360155" expanded="false" signature="6:78" ph="..." />
+                <marker date="1517082360155" expanded="true" signature="116:805" ph="{...}" />
+                <marker date="1517082360155" expanded="true" signature="149:211" ph="{...}" />
+                <marker date="1517082360155" expanded="true" signature="157:208" ph="{...}" />
+                <marker date="1517082360155" expanded="true" signature="338:380" ph="{...}" />
+                <marker date="1517082360155" expanded="true" signature="346:377" ph="{...}" />
+                <marker date="1517082360155" expanded="true" signature="429:529" ph="{...}" />
+                <marker date="1517082360155" expanded="true" signature="583:799" ph="{...}" />
+                <marker date="1517082360155" expanded="true" signature="726:784" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Ball.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/scripts/Ball.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="74" column="6" lean-forward="false" selection-start-line="74" selection-start-column="6" selection-end-line="74" selection-end-column="6" />
+              <folding>
+                <marker date="1517082377608" expanded="false" signature="6:78" ph="..." />
+                <marker date="1517082377608" expanded="true" signature="113:3226" ph="{...}" />
+                <marker date="1517082377608" expanded="true" signature="432:691" ph="{...}" />
+                <marker date="1517082377608" expanded="true" signature="745:919" ph="{...}" />
+                <marker date="1517082377608" expanded="true" signature="765:916" ph="{...}" />
+                <marker date="1517082377608" expanded="true" signature="880:912" ph="{...}" />
+                <marker date="1517082377608" expanded="true" signature="964:1429" ph="{...}" />
+                <marker date="1517082377608" expanded="true" signature="1007:1098" ph="{...}" />
+                <marker date="1517082377608" expanded="true" signature="1147:1178" ph="{...}" />
+                <marker date="1517082377608" expanded="true" signature="1221:1230" ph="{...}" />
+                <marker date="1517082377608" expanded="true" signature="1327:1422" ph="/* this.gameObject.GetComponent&lt;Rigidbody2D&gt; ().velocity = Vector2.zero; ... */" />
+                <marker date="1517082377608" expanded="true" signature="1472:2036" ph="{...}" />
+                <marker date="1517082377608" expanded="true" signature="1685:1811" ph="/* calc angle ... */" />
+                <marker date="1517082377608" expanded="true" signature="1930:1950" ph="{...}" />
+                <marker date="1517082377608" expanded="true" signature="2077:2544" ph="{...}" />
+                <marker date="1517082377608" expanded="true" signature="2235:2255" ph="{...}" />
+                <marker date="1517082377608" expanded="true" signature="2579:2862" ph="{...}" />
+                <marker date="1517082377608" expanded="true" signature="2894:2953" ph="{...}" />
+                <marker date="1517082377608" expanded="true" signature="2980:3222" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -62,6 +113,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/scripts/GroundPopulator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/scripts/Ball.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/scripts/Paddle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/scripts/Levitating.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -71,6 +123,8 @@
         <option value="$PROJECT_DIR$/Assets/scripts/movControl.cs" />
         <option value="$PROJECT_DIR$/Assets/scripts/CloudMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/scripts/Levitating.cs" />
+        <option value="$PROJECT_DIR$/Assets/scripts/Paddle.cs" />
+        <option value="$PROJECT_DIR$/Assets/scripts/Ball.cs" />
       </list>
     </option>
   </component>
@@ -168,7 +222,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19947916" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40135288" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40135288" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -202,13 +256,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
           <caret line="16" column="9" lean-forward="false" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/scripts/Ball.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -266,6 +313,52 @@
             <marker date="1517079957581" expanded="true" signature="478:771" ph="{...}" />
             <marker date="1517079957581" expanded="true" signature="823:1337" ph="{...}" />
             <marker date="1517079957581" expanded="true" signature="1106:1303" ph="/* p.x = Mathf.Round(p.x+parent.position.x * pixelsPerUnit) / pixelsPerUnit - parent.position.x; ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/scripts/Paddle.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="30" column="4" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+          <folding>
+            <marker date="1517082360155" expanded="false" signature="6:78" ph="..." />
+            <marker date="1517082360155" expanded="true" signature="116:805" ph="{...}" />
+            <marker date="1517082360155" expanded="true" signature="149:211" ph="{...}" />
+            <marker date="1517082360155" expanded="true" signature="157:208" ph="{...}" />
+            <marker date="1517082360155" expanded="true" signature="338:380" ph="{...}" />
+            <marker date="1517082360155" expanded="true" signature="346:377" ph="{...}" />
+            <marker date="1517082360155" expanded="true" signature="429:529" ph="{...}" />
+            <marker date="1517082360155" expanded="true" signature="583:799" ph="{...}" />
+            <marker date="1517082360155" expanded="true" signature="726:784" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/scripts/Ball.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="74" column="6" lean-forward="false" selection-start-line="74" selection-start-column="6" selection-end-line="74" selection-end-column="6" />
+          <folding>
+            <marker date="1517082377608" expanded="false" signature="6:78" ph="..." />
+            <marker date="1517082377608" expanded="true" signature="113:3226" ph="{...}" />
+            <marker date="1517082377608" expanded="true" signature="432:691" ph="{...}" />
+            <marker date="1517082377608" expanded="true" signature="745:919" ph="{...}" />
+            <marker date="1517082377608" expanded="true" signature="765:916" ph="{...}" />
+            <marker date="1517082377608" expanded="true" signature="880:912" ph="{...}" />
+            <marker date="1517082377608" expanded="true" signature="964:1429" ph="{...}" />
+            <marker date="1517082377608" expanded="true" signature="1007:1098" ph="{...}" />
+            <marker date="1517082377608" expanded="true" signature="1147:1178" ph="{...}" />
+            <marker date="1517082377608" expanded="true" signature="1221:1230" ph="{...}" />
+            <marker date="1517082377608" expanded="true" signature="1327:1422" ph="/* this.gameObject.GetComponent&lt;Rigidbody2D&gt; ().velocity = Vector2.zero; ... */" />
+            <marker date="1517082377608" expanded="true" signature="1472:2036" ph="{...}" />
+            <marker date="1517082377608" expanded="true" signature="1685:1811" ph="/* calc angle ... */" />
+            <marker date="1517082377608" expanded="true" signature="1930:1950" ph="{...}" />
+            <marker date="1517082377608" expanded="true" signature="2077:2544" ph="{...}" />
+            <marker date="1517082377608" expanded="true" signature="2235:2255" ph="{...}" />
+            <marker date="1517082377608" expanded="true" signature="2579:2862" ph="{...}" />
+            <marker date="1517082377608" expanded="true" signature="2894:2953" ph="{...}" />
+            <marker date="1517082377608" expanded="true" signature="2980:3222" ph="{...}" />
           </folding>
         </state>
       </provider>
