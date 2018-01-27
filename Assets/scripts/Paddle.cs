@@ -49,15 +49,10 @@ public class Paddle : MonoBehaviour
 	// Update is called once per frame
 	void Update () {
 
-
-
 		this.transform.position = new Vector2(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, transform.position.y);
 		
 		lastPositions[lastPositionIndex] = transform.position.x;
 		lastPositionIndex = (lastPositionIndex+1) % 4;
 	}
-
-
-
 
 }

@@ -16,6 +16,8 @@
         </e>
         <e p="scripts" t="Include">
           <e p="Ball.cs" t="Include" />
+          <e p="BearAnim.cs" t="Include" />
+          <e p="BearAnimState.cs" t="Include" />
           <e p="CloudMovement.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="GroundPopulator.cs" t="Include" />
