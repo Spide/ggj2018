@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a70138ee-0ead-4322-8d4d-7b9c5604f830" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.ggj2018/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.ggj2018/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/materials/smoth.physicsMaterial2D" afterPath="$PROJECT_DIR$/Assets/materials/smoth.physicsMaterial2D" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/scenes/testscene.unity" afterPath="$PROJECT_DIR$/Assets/scenes/testscene.unity" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/scripts/movControl.cs" afterPath="$PROJECT_DIR$/Assets/scripts/movControl.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,20 +21,23 @@
       <file leaf-file-name="movControl.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/scripts/movControl.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="43" column="58" lean-forward="true" selection-start-line="43" selection-start-column="58" selection-end-line="43" selection-end-column="58" />
+            <state relative-caret-position="-260">
+              <caret line="68" column="8" lean-forward="true" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="8" />
               <folding>
-                <marker date="1517049213179" expanded="true" signature="59:1623" ph="{...}" />
-                <marker date="1517049213179" expanded="true" signature="402:503" ph="{...}" />
-                <marker date="1517049213179" expanded="true" signature="519:615" ph="{...}" />
-                <marker date="1517049213179" expanded="true" signature="637:1620" ph="{...}" />
-                <marker date="1517049213179" expanded="true" signature="704:774" ph="{...}" />
-                <marker date="1517049213179" expanded="true" signature="794:864" ph="{...}" />
-                <marker date="1517049213179" expanded="true" signature="868:926" ph="{...}" />
-                <marker date="1517049213179" expanded="true" signature="960:1158" ph="{...}" />
-                <marker date="1517049213179" expanded="true" signature="1215:1396" ph="{...}" />
-                <marker date="1517049213179" expanded="true" signature="1456:1566" ph="{...}" />
-                <marker date="1517049213179" expanded="true" signature="1573:1614" ph="{...}" />
+                <marker date="1517062835357" expanded="true" signature="59:2381" ph="{...}" />
+                <marker date="1517062835357" expanded="true" signature="682:783" ph="{...}" />
+                <marker date="1517062835357" expanded="true" signature="799:1249" ph="{...}" />
+                <marker date="1517062835357" expanded="true" signature="1016:1127" ph="{...}" />
+                <marker date="1517062835357" expanded="true" signature="1162:1195" ph="{...}" />
+                <marker date="1517062835357" expanded="true" signature="1212:1246" ph="{...}" />
+                <marker date="1517062835357" expanded="true" signature="1271:2378" ph="{...}" />
+                <marker date="1517062835357" expanded="true" signature="1399:1471" ph="{...}" />
+                <marker date="1517062835357" expanded="true" signature="1586:1679" ph="{...}" />
+                <marker date="1517062835357" expanded="true" signature="1736:1805" ph="{...}" />
+                <marker date="1517062835357" expanded="true" signature="1880:1969" ph="{...}" />
+                <marker date="1517062835357" expanded="true" signature="2040:2160" ph="{...}" />
+                <marker date="1517062835357" expanded="true" signature="2229:2323" ph="{...}" />
+                <marker date="1517062835357" expanded="true" signature="2330:2372" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -106,7 +113,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Unity Debug.Attach to Unity Editor">
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" />
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" pid="4304" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -134,7 +141,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3990981" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -151,26 +158,31 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Assets/scripts/movControl.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="43" column="58" lean-forward="true" selection-start-line="43" selection-start-column="58" selection-end-line="43" selection-end-column="58" />
+        <state relative-caret-position="-260">
+          <caret line="68" column="8" lean-forward="true" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="8" />
           <folding>
-            <marker date="1517049213179" expanded="true" signature="59:1623" ph="{...}" />
-            <marker date="1517049213179" expanded="true" signature="402:503" ph="{...}" />
-            <marker date="1517049213179" expanded="true" signature="519:615" ph="{...}" />
-            <marker date="1517049213179" expanded="true" signature="637:1620" ph="{...}" />
-            <marker date="1517049213179" expanded="true" signature="704:774" ph="{...}" />
-            <marker date="1517049213179" expanded="true" signature="794:864" ph="{...}" />
-            <marker date="1517049213179" expanded="true" signature="868:926" ph="{...}" />
-            <marker date="1517049213179" expanded="true" signature="960:1158" ph="{...}" />
-            <marker date="1517049213179" expanded="true" signature="1215:1396" ph="{...}" />
-            <marker date="1517049213179" expanded="true" signature="1456:1566" ph="{...}" />
-            <marker date="1517049213179" expanded="true" signature="1573:1614" ph="{...}" />
+            <marker date="1517062835357" expanded="true" signature="59:2381" ph="{...}" />
+            <marker date="1517062835357" expanded="true" signature="682:783" ph="{...}" />
+            <marker date="1517062835357" expanded="true" signature="799:1249" ph="{...}" />
+            <marker date="1517062835357" expanded="true" signature="1016:1127" ph="{...}" />
+            <marker date="1517062835357" expanded="true" signature="1162:1195" ph="{...}" />
+            <marker date="1517062835357" expanded="true" signature="1212:1246" ph="{...}" />
+            <marker date="1517062835357" expanded="true" signature="1271:2378" ph="{...}" />
+            <marker date="1517062835357" expanded="true" signature="1399:1471" ph="{...}" />
+            <marker date="1517062835357" expanded="true" signature="1586:1679" ph="{...}" />
+            <marker date="1517062835357" expanded="true" signature="1736:1805" ph="{...}" />
+            <marker date="1517062835357" expanded="true" signature="1880:1969" ph="{...}" />
+            <marker date="1517062835357" expanded="true" signature="2040:2160" ph="{...}" />
+            <marker date="1517062835357" expanded="true" signature="2229:2323" ph="{...}" />
+            <marker date="1517062835357" expanded="true" signature="2330:2372" ph="{...}" />
           </folding>
         </state>
       </provider>
