@@ -39,6 +39,43 @@ public class GameManager : MonoBehaviour {
 
 	}
 
+	void Start () {
+
+		foreach(PickupPoint point in pickupPoints){
+			point.disablePoint ();
+		}
+
+		chooseNextPickupPoint ();
+
+
+	}
+
+	public void chooseNextPickupPoint(){
+
+		if (actualPickupPoint == null) {
+			actualPickupPoint = pickupPoints [Random.Range (0, pickupPoints.Count - 1)];
+
+		} else if (pickupPoints.Count >= 1) {
+			PickupPoint farest = pickupPoints [0];
+
+			foreach (PickupPoint point in pickupPoints) {
+				if (Vector2.Distance (actualPickupPoint.transform.position, farest.transform.position) < Vector2.Distance (point.transform.position, actualPickupPoint.transform.position)) {
+					farest = point;
+				}
+			}
+
+			actualPickupPoint = farest;
+		} else {
+			// win state
+			Debug.Log("winner");
+
+			return;
+		}
+
+
+		actualPickupPoint.activatePoint ();
+	}
+
 	public void addSpawnPoint(Transform point){
 		spawnPoints.Add (point);
 	}
@@ -46,6 +83,15 @@ public class GameManager : MonoBehaviour {
 
 	public void addPickupPoint(PickupPoint point){
 		pickupPoints.Add (point);
+	}
+
+	public void finishedPickupPoint(PickupPoint point){
+
+		pickupPoints.Remove (point);
+		point.disablePoint ();
+		chooseNextPickupPoint ();
+
+
 	}
 
 
@@ -90,14 +136,17 @@ public class GameManager : MonoBehaviour {
 		//defaultCameraSize = Camera.main.orthographicSize;
 		//defaultPosition = Camera.main.gameObject.transform.position;
 		//deadPosition = player.transform.position;
+		if(!playersDead.ContainsKey(player)){
 
-		playersDead.Add (player, byBall);
+			playersDead.Add (player, byBall);
 
-		//Camera.main.orthographicSize = defaultCameraSize - 0.2f;
-		Time.timeScale = 0.5f;
+			//Camera.main.orthographicSize = defaultCameraSize - 0.2f;
+			Time.timeScale = 0.5f;
 
-		focus = true;
-		timeToFocus = 0.5f;
+			focus = true;
+			timeToFocus = 0.5f;
+		}
+
 	}
 		
 
