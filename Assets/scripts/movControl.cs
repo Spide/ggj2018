@@ -124,13 +124,11 @@ public class movControl : MonoBehaviour
 		}
 		
 	}
-
+		
 
 	public void justDied()
 	{
 		_justDied = 1;
-
-
 	}
 
 
