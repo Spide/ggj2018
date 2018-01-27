@@ -19,6 +19,7 @@
           <e p="CloudMovement.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="GroundPopulator.cs" t="Include" />
+          <e p="Levitating.cs" t="Include" />
           <e p="movControl.cs" t="Include" />
           <e p="Paddle.cs" t="Include" />
           <e p="PickupPoint.cs" t="Include" />
