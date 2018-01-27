@@ -50,7 +50,7 @@ public class movControl : MonoBehaviour
 		{
 			_hasWallJump = false;
 		}
-		if (_grounded)
+		if (_grounded || _touchingWall)
 		{
 			_doubleJumped = false;
 		}

@@ -14,7 +14,10 @@
           </e>
         </e>
         <e p="scripts" t="Include">
+          <e p="Ball.cs" t="Include" />
+          <e p="GroundPopulator.cs" t="Include" />
           <e p="movControl.cs" t="Include" />
+          <e p="Paddle.cs" t="Include" />
         </e>
       </e>
       <e p="ggj2018.sln" t="IncludeFlat" />

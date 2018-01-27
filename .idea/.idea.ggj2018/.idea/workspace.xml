@@ -2,6 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a70138ee-0ead-4322-8d4d-7b9c5604f830" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/gfx/tiles/tile_bottonleft_corner.png" afterPath="$PROJECT_DIR$/Assets/gfx/tiles/tile_bottonleft_corner.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/gfx/tiles/tile_leftup_corner.png" afterPath="$PROJECT_DIR$/Assets/gfx/tiles/tile_leftup_corner.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/gfx/tiles/tile_middlemiddle.png" afterPath="$PROJECT_DIR$/Assets/gfx/tiles/tile_middlemiddle.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/gfx/tiles/tile_middlemiddle_2.png" afterPath="$PROJECT_DIR$/Assets/gfx/tiles/tile_middlemiddle_2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/gfx/tiles/tile_normal_middle.png" afterPath="$PROJECT_DIR$/Assets/gfx/tiles/tile_normal_middle.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/gfx/tiles/tile_normal_middle_2.png" afterPath="$PROJECT_DIR$/Assets/gfx/tiles/tile_normal_middle_2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/gfx/tiles/tile_normal_right.png" afterPath="$PROJECT_DIR$/Assets/gfx/tiles/tile_normal_right.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/gfx/tiles/tile_standalone.png" afterPath="$PROJECT_DIR$/Assets/gfx/tiles/tile_standalone.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/gfx/tiles/tile_upperalone.png" afterPath="$PROJECT_DIR$/Assets/gfx/tiles/tile_upperalone.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/gfx/tiles/tile_upperleft_corner.png" afterPath="$PROJECT_DIR$/Assets/gfx/tiles/tile_upperleft_corner.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/gfx/tiles/tile_uppermiddle.png" afterPath="$PROJECT_DIR$/Assets/gfx/tiles/tile_uppermiddle.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.ggj2018/.idea/contentModel.xml" afterPath="$PROJECT_DIR$/.idea/.idea.ggj2018/.idea/contentModel.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.ggj2018/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.ggj2018/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/gfx/tiles/tile_bottonleft_corner.png.meta" afterPath="$PROJECT_DIR$/Assets/gfx/tiles/tile_bottonleft_corner.png.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/gfx/tiles/tile_leftup_corner.png.meta" afterPath="$PROJECT_DIR$/Assets/gfx/tiles/tile_leftup_corner.png.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/gfx/tiles/tile_middlemiddle.png.meta" afterPath="$PROJECT_DIR$/Assets/gfx/tiles/tile_middlemiddle.png.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/gfx/tiles/tile_middlemiddle_2.png.meta" afterPath="$PROJECT_DIR$/Assets/gfx/tiles/tile_middlemiddle_2.png.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/gfx/tiles/tile_normal_middle.png.meta" afterPath="$PROJECT_DIR$/Assets/gfx/tiles/tile_normal_middle.png.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/gfx/tiles/tile_normal_middle_2.png.meta" afterPath="$PROJECT_DIR$/Assets/gfx/tiles/tile_normal_middle_2.png.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/gfx/tiles/tile_normal_right.png.meta" afterPath="$PROJECT_DIR$/Assets/gfx/tiles/tile_normal_right.png.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/gfx/tiles/tile_standalone.png.meta" afterPath="$PROJECT_DIR$/Assets/gfx/tiles/tile_standalone.png.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/gfx/tiles/tile_upperalone.png.meta" afterPath="$PROJECT_DIR$/Assets/gfx/tiles/tile_upperalone.png.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/gfx/tiles/tile_upperleft_corner.png.meta" afterPath="$PROJECT_DIR$/Assets/gfx/tiles/tile_upperleft_corner.png.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/gfx/tiles/tile_uppermiddle.png.meta" afterPath="$PROJECT_DIR$/Assets/gfx/tiles/tile_uppermiddle.png.meta" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/scenes/testscene.unity" afterPath="$PROJECT_DIR$/Assets/scenes/testscene.unity" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/scripts/movControl.cs" afterPath="$PROJECT_DIR$/Assets/scripts/movControl.cs" />
     </list>
@@ -17,25 +41,39 @@
       <file leaf-file-name="movControl.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/scripts/movControl.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2162">
-              <caret line="117" column="9" lean-forward="true" selection-start-line="117" selection-start-column="9" selection-end-line="117" selection-end-column="9" />
+            <state relative-caret-position="394">
+              <caret line="55" column="9" lean-forward="false" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
               <folding>
-                <marker date="1517063220828" expanded="true" signature="59:2607" ph="{...}" />
-                <marker date="1517063220828" expanded="true" signature="703:804" ph="{...}" />
-                <marker date="1517063220828" expanded="true" signature="820:1270" ph="{...}" />
-                <marker date="1517063220828" expanded="true" signature="1037:1148" ph="{...}" />
-                <marker date="1517063220828" expanded="true" signature="1183:1216" ph="{...}" />
-                <marker date="1517063220828" expanded="true" signature="1233:1267" ph="{...}" />
-                <marker date="1517063220828" expanded="true" signature="1294:1402" ph="{...}" />
-                <marker date="1517063220828" expanded="true" signature="1424:2604" ph="{...}" />
-                <marker date="1517063220828" expanded="true" signature="1552:1624" ph="{...}" />
-                <marker date="1517063220828" expanded="true" signature="1731:1752" ph="{...}" />
-                <marker date="1517063220828" expanded="true" signature="1812:1905" ph="{...}" />
-                <marker date="1517063220828" expanded="true" signature="1962:2031" ph="{...}" />
-                <marker date="1517063220828" expanded="true" signature="2106:2195" ph="{...}" />
-                <marker date="1517063220828" expanded="true" signature="2266:2386" ph="{...}" />
-                <marker date="1517063220828" expanded="true" signature="2455:2549" ph="{...}" />
-                <marker date="1517063220828" expanded="true" signature="2556:2598" ph="{...}" />
+                <marker date="1517068868853" expanded="true" signature="59:2624" ph="{...}" />
+                <marker date="1517068868853" expanded="true" signature="703:804" ph="{...}" />
+                <marker date="1517068868853" expanded="true" signature="820:1287" ph="{...}" />
+                <marker date="1517068868853" expanded="true" signature="1037:1148" ph="{...}" />
+                <marker date="1517068868853" expanded="true" signature="1183:1216" ph="{...}" />
+                <marker date="1517068868853" expanded="true" signature="1250:1284" ph="{...}" />
+                <marker date="1517068868853" expanded="true" signature="1311:1419" ph="{...}" />
+                <marker date="1517068868853" expanded="true" signature="1441:2621" ph="{...}" />
+                <marker date="1517068868853" expanded="true" signature="1569:1641" ph="{...}" />
+                <marker date="1517068868853" expanded="true" signature="1748:1769" ph="{...}" />
+                <marker date="1517068868853" expanded="true" signature="1829:1922" ph="{...}" />
+                <marker date="1517068868853" expanded="true" signature="1979:2048" ph="{...}" />
+                <marker date="1517068868853" expanded="true" signature="2123:2212" ph="{...}" />
+                <marker date="1517068868853" expanded="true" signature="2283:2403" ph="{...}" />
+                <marker date="1517068868853" expanded="true" signature="2472:2566" ph="{...}" />
+                <marker date="1517068868853" expanded="true" signature="2573:2615" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GroundPopulator.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/scripts/GroundPopulator.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="364">
+              <caret line="16" column="9" lean-forward="false" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+              <folding>
+                <marker date="1517067359758" expanded="true" signature="84:349" ph="{...}" />
+                <marker date="1517067359758" expanded="true" signature="158:345" ph="{...}" />
+                <marker date="1517067359758" expanded="true" signature="234:342" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -48,10 +86,12 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/scripts/movControl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/scripts/GroundPopulator.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Assets/scripts/GroundPopulator.cs" />
         <option value="$PROJECT_DIR$/Assets/scripts/movControl.cs" />
       </list>
     </option>
@@ -62,7 +102,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="960" />
     <option name="width" value="960" />
     <option name="height" value="1102" />
@@ -126,7 +166,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.122395836" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -162,27 +202,39 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/scripts/GroundPopulator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="16" column="9" lean-forward="false" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+          <folding>
+            <marker date="1517067359758" expanded="true" signature="84:349" ph="{...}" />
+            <marker date="1517067359758" expanded="true" signature="158:345" ph="{...}" />
+            <marker date="1517067359758" expanded="true" signature="234:342" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/scripts/movControl.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2162">
-          <caret line="117" column="9" lean-forward="true" selection-start-line="117" selection-start-column="9" selection-end-line="117" selection-end-column="9" />
+        <state relative-caret-position="394">
+          <caret line="55" column="9" lean-forward="false" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
           <folding>
-            <marker date="1517063220828" expanded="true" signature="59:2607" ph="{...}" />
-            <marker date="1517063220828" expanded="true" signature="703:804" ph="{...}" />
-            <marker date="1517063220828" expanded="true" signature="820:1270" ph="{...}" />
-            <marker date="1517063220828" expanded="true" signature="1037:1148" ph="{...}" />
-            <marker date="1517063220828" expanded="true" signature="1183:1216" ph="{...}" />
-            <marker date="1517063220828" expanded="true" signature="1233:1267" ph="{...}" />
-            <marker date="1517063220828" expanded="true" signature="1294:1402" ph="{...}" />
-            <marker date="1517063220828" expanded="true" signature="1424:2604" ph="{...}" />
-            <marker date="1517063220828" expanded="true" signature="1552:1624" ph="{...}" />
-            <marker date="1517063220828" expanded="true" signature="1731:1752" ph="{...}" />
-            <marker date="1517063220828" expanded="true" signature="1812:1905" ph="{...}" />
-            <marker date="1517063220828" expanded="true" signature="1962:2031" ph="{...}" />
-            <marker date="1517063220828" expanded="true" signature="2106:2195" ph="{...}" />
-            <marker date="1517063220828" expanded="true" signature="2266:2386" ph="{...}" />
-            <marker date="1517063220828" expanded="true" signature="2455:2549" ph="{...}" />
-            <marker date="1517063220828" expanded="true" signature="2556:2598" ph="{...}" />
+            <marker date="1517068868853" expanded="true" signature="59:2624" ph="{...}" />
+            <marker date="1517068868853" expanded="true" signature="703:804" ph="{...}" />
+            <marker date="1517068868853" expanded="true" signature="820:1287" ph="{...}" />
+            <marker date="1517068868853" expanded="true" signature="1037:1148" ph="{...}" />
+            <marker date="1517068868853" expanded="true" signature="1183:1216" ph="{...}" />
+            <marker date="1517068868853" expanded="true" signature="1250:1284" ph="{...}" />
+            <marker date="1517068868853" expanded="true" signature="1311:1419" ph="{...}" />
+            <marker date="1517068868853" expanded="true" signature="1441:2621" ph="{...}" />
+            <marker date="1517068868853" expanded="true" signature="1569:1641" ph="{...}" />
+            <marker date="1517068868853" expanded="true" signature="1748:1769" ph="{...}" />
+            <marker date="1517068868853" expanded="true" signature="1829:1922" ph="{...}" />
+            <marker date="1517068868853" expanded="true" signature="1979:2048" ph="{...}" />
+            <marker date="1517068868853" expanded="true" signature="2123:2212" ph="{...}" />
+            <marker date="1517068868853" expanded="true" signature="2283:2403" ph="{...}" />
+            <marker date="1517068868853" expanded="true" signature="2472:2566" ph="{...}" />
+            <marker date="1517068868853" expanded="true" signature="2573:2615" ph="{...}" />
           </folding>
         </state>
       </provider>
