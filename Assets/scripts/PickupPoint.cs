@@ -20,8 +20,10 @@ public class PickupPoint : MonoBehaviour
 
 	public void activatePoint(){
 		timeToPick = 2f;
-		GetComponent<SpriteRenderer> ().enabled = true;
+		//GetComponent<SpriteRenderer> ().enabled = true;
 		transform.localScale = Vector2.one * 1.2f;
+
+		transform.Find ("rune").GetComponent<Animator> ().SetBool ("hidden", false);
 
 		isActivated = true;
 
@@ -32,23 +34,31 @@ public class PickupPoint : MonoBehaviour
 		if (isActivated) {
 			picking = true;
 
+			transform.Find ("rune").GetComponent<Animator> ().SetBool ("picking", true);
 			Debug.Log ("start point");
 		}
 			
 	}
 
 	public void endPicking(){
-		if(isActivated)
+		if (isActivated) {
 			picking = false;
+			transform.Find ("rune").GetComponent<Animator> ().SetBool ("picking", false);
+		}
+			
 	}
 
 	public void picked(){
 		picking = false;
 		GameManager.instance.finishedPickupPoint (this);
+
+		transform.Find ("rune").GetComponent<Animator> ().SetTrigger ("picked");
+		transform.Find ("rune").GetComponent<Animator> ().SetBool ("hidden", true);
 	}
 
 	public void disablePoint(){
-		GetComponent<SpriteRenderer> ().enabled = false;
+		//GetComponent<SpriteRenderer> ().enabled = false;
+
 		transform.localScale = Vector2.one;
 		isActivated = false;
 	}
