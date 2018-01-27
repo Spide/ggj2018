@@ -24,11 +24,11 @@ public class GameManager : MonoBehaviour {
 		if (focus) {
 
 
-			Vector3 result = Vector3.Lerp (defaultPosition, deadPosition, 1f - (0.1f* ( 0.1f *timeToFocus)));
+			Vector3 result = Vector3.Lerp (defaultPosition, deadPosition, 1f - 0.01f);
 			Camera.main.gameObject.transform.position = new Vector3(result.x, result.y, -10f);
 			timeToFocus -= Time.deltaTime;
 
-			float focused = Mathf.Lerp (defaultCameraSize, defaultCameraSize-0.2f, 1f- (0.1f* ( 0.1f *timeToFocus)));
+			float focused = Mathf.Lerp (defaultCameraSize, defaultCameraSize-0.2f, 1f - 0.1f);
 			Camera.main.orthographicSize = focused;
 
 			if (timeToFocus <= 0) {
@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour {
 		Time.timeScale = 0.5f;
 
 		focus = true;
-		timeToFocus = 1;
+		timeToFocus = 0.5f;
 	}
 		
 

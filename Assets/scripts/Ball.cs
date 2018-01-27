@@ -40,7 +40,7 @@ public class Ball : MonoBehaviour
 		if (!shooted) {
 			transform.position = bottomPaddle.BallSpawnPoint.position;
 
-			if (Input.anyKeyDown) {
+			if (Input.GetMouseButtonUp(0)) {
 				shoot (bottomPaddle);
 			}
 		}
@@ -55,10 +55,11 @@ public class Ball : MonoBehaviour
 			resetBall ();
 		}
 		else if (coll.gameObject.tag == "Wall") {
-			resetBall ();
+			
 		}else {
-			coll.gameObject.SendMessage ("boom");
-			this.gameObject.SetActive (false);
+			coll.gameObject.SendMessage ("boom", SendMessageOptions.DontRequireReceiver);
+			//this.gameObject.GetComponent<Rigidbody2D> ().velocity = Vector2.zero;
+			this.resetBall ();
 		}
 	}
 
