@@ -2,12 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Paddle : MonoBehaviour {
+public class Paddle : MonoBehaviour
+{
 
+	private float[] lastPositions;
+	private int lastPositionIndex;
+	
+	public float FakeVelocity {
+		get
+		{
+			var vp = (lastPositionIndex + 3) % 4;
+			var dist = 0f;
+			for (var i = 0; i < lastPositions.Length-1; i++)
+			{
+				var d1 = lastPositions[vp];
+				vp = (vp + 3) % 4;
+				var d2 = lastPositions[vp];
+				dist += d1 - d2;
+			}
 
-	public Vector3 FakeVelocity {
-		get {
-			return  transform.position - lastPosition;
+			return dist;
 		}
 	}
 
@@ -28,7 +42,8 @@ public class Paddle : MonoBehaviour {
 		lastPosition = transform.position;
 
 		ballSpawnPoint = transform.Find ("BallSpawnPoint");
-			
+
+		lastPositions = new[] {0f, 0f, 0f, 0f};
 	}
 
 	// Update is called once per frame
@@ -37,15 +52,9 @@ public class Paddle : MonoBehaviour {
 
 
 		this.transform.position = new Vector2(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, transform.position.y);
-
-
-		if (vFckr >= 3) {
-			lastPosition = transform.position;
-
-			vFckr = 0;
-		}
-
-		vFckr++;
+		
+		lastPositions[lastPositionIndex] = transform.position.x;
+		lastPositionIndex = (lastPositionIndex+1) % 4;
 	}
 
 

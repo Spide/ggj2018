@@ -72,10 +72,15 @@ public class Ball : MonoBehaviour
 		float X = 0;
 
 		// calc angle
-	//	X = -(paddle.transform.position - transform.position).x * paddleDragMultiplier;
-
-		// add velocity of paddle
-		X = X + (paddle.FakeVelocity.x * velocityDragMultiplier);
+		if (Mathf.Abs((paddle.transform.position - transform.position).x) > 0.8f)
+		{
+			X = -(paddle.transform.position - transform.position).x * paddleDragMultiplier;
+		}
+		else
+		{
+			// add velocity of paddle
+			X = X + (paddle.FakeVelocity * velocityDragMultiplier);
+		}
 
 		float Y = speed;
 
@@ -89,7 +94,7 @@ public class Ball : MonoBehaviour
 	private void shoot (Paddle fromPaddle)
 	{
 		// add velocity of paddle
-		float X = fromPaddle.FakeVelocity.x * velocityDragMultiplier;
+		float X = fromPaddle.FakeVelocity * velocityDragMultiplier;
 
 		float Y = speed;
 
