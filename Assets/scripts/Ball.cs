@@ -16,6 +16,7 @@ public class Ball : MonoBehaviour
 	public float paddleDragMultiplier = 10;
 
 	private bool shooted = false;
+	private bool readyToShoot = true;
 
 
 
@@ -40,7 +41,7 @@ public class Ball : MonoBehaviour
 		if (!shooted) {
 			transform.position = bottomPaddle.BallSpawnPoint.position;
 
-			if (Input.GetMouseButtonUp(0)) {
+			if (readyToShoot && Input.GetMouseButtonUp(0)) {
 				shoot (bottomPaddle);
 			}
 		}
@@ -52,7 +53,7 @@ public class Ball : MonoBehaviour
 			Paddle paddle = coll.gameObject.GetComponent<Paddle> ();
 			paddleBounce (paddle);
 		} else if (coll.gameObject.tag == "BallDeadZone") {
-			resetBall ();
+			requestRestartBall ();
 		}
 		else if (coll.gameObject.tag == "Wall") {
 			
@@ -103,11 +104,30 @@ public class Ball : MonoBehaviour
 
 	}
 
-	public void resetBall ()
-	{
+	public void requestRestartBall(){
+		
+		GetComponent<SpriteRenderer> ().color = new Color (1f, 1f, 1f, 0.3f);
 		transform.position = bottomPaddle.BallSpawnPoint.position;
 		GetComponent<Rigidbody2D> ().velocity = new Vector2 (0f, 0);
 		shooted = false;
+		readyToShoot = false;
+
+		StartCoroutine("pendingRestart");
+	}
+
+	IEnumerator pendingRestart() {
+		yield return new WaitForSeconds(3);
+
+		resetBall ();
+	}
+
+	public void resetBall ()
+	{
+		GetComponent<SpriteRenderer> ().color = new Color (1f, 1f, 1f, 1f);
+		transform.position = bottomPaddle.BallSpawnPoint.position;
+		GetComponent<Rigidbody2D> ().velocity = new Vector2 (0f, 0);
+		shooted = false;
+		readyToShoot = true;
 	}
 
 

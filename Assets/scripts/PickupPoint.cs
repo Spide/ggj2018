@@ -3,17 +3,82 @@ using System.Collections;
 
 public class PickupPoint : MonoBehaviour
 {
+	public bool isActivated = false;
+	public bool picking = false;
 
+	public Sprite defaultSprite;
+	public Sprite pickedSprite;
+
+	private float timeToPick = 2f;
 	// Use this for initialization
-	void Start ()
+	void Awake ()
 	{
-	
+		if(GameManager.instance){
+			GameManager.instance.addPickupPoint (this);
+		}
+	}
+
+	public void activatePoint(){
+		timeToPick = 2f;
+		GetComponent<SpriteRenderer> ().enabled = true;
+		transform.localScale = Vector2.one * 1.2f;
+
+		isActivated = true;
+
+		Debug.Log ("activated point");
+	}
+
+	public void startPicking(){
+		if (isActivated) {
+			picking = true;
+
+			Debug.Log ("start point");
+		}
+			
+	}
+
+	public void endPicking(){
+		if(isActivated)
+			picking = false;
+	}
+
+	public void picked(){
+		picking = false;
+		GameManager.instance.finishedPickupPoint (this);
+	}
+
+	public void disablePoint(){
+		GetComponent<SpriteRenderer> ().enabled = false;
+		transform.localScale = Vector2.one;
+		isActivated = false;
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
-	
+		if (picking) {
+			timeToPick -= Time.deltaTime;
+
+			if(timeToPick <= 0){
+				picked ();
+			
+			}
+		}
+	}
+
+
+	void OnTriggerEnter2D (Collider2D coll)
+	{
+		if (coll.gameObject.tag == "Player") {
+			startPicking ();
+		}
+	}
+
+	void OnTriggerExit2D (Collider2D coll)
+	{
+		if (coll.gameObject.tag == "Player") {
+			endPicking ();
+		}
 	}
 }
 
