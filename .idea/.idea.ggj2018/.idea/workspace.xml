@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a70138ee-0ead-4322-8d4d-7b9c5604f830" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.ggj2018/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.ggj2018/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="a70138ee-0ead-4322-8d4d-7b9c5604f830" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +104,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Unity Debug.Attach to Unity Editor">
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" pid="4304" />
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -123,23 +121,23 @@
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.122395836" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.122395836" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3990981" sideWeight="0.50208336" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4002255" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3990981" sideWeight="0.49791667" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3990981" sideWeight="0.49791667" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -160,11 +158,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
           <caret line="16" column="9" lean-forward="false" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-          <folding>
-            <marker date="1517067359758" expanded="true" signature="84:349" ph="{...}" />
-            <marker date="1517067359758" expanded="true" signature="158:345" ph="{...}" />
-            <marker date="1517067359758" expanded="true" signature="234:342" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -172,14 +165,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
           <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding>
-            <marker date="1517075421210" expanded="false" signature="6:78" ph="..." />
-            <marker date="1517075421210" expanded="true" signature="113:2662" ph="{...}" />
-            <marker date="1517075421210" expanded="true" signature="397:656" ph="{...}" />
-            <marker date="1517075421210" expanded="true" signature="710:808" ph="{...}" />
-            <marker date="1517075421210" expanded="true" signature="730:808" ph="{...}" />
-            <marker date="1517075421210" expanded="true" signature="2509:2658" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -187,25 +172,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
           <caret line="126" column="0" lean-forward="false" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
-          <folding>
-            <marker date="1517075421230" expanded="true" signature="59:2785" ph="{...}" />
-            <marker date="1517075421230" expanded="true" signature="735:836" ph="{...}" />
-            <marker date="1517075421230" expanded="true" signature="852:1349" ph="{...}" />
-            <marker date="1517075421230" expanded="true" signature="1099:1210" ph="{...}" />
-            <marker date="1517075421230" expanded="true" signature="1245:1278" ph="{...}" />
-            <marker date="1517075421230" expanded="true" signature="1312:1346" ph="{...}" />
-            <marker date="1517075421230" expanded="true" signature="1373:1481" ph="{...}" />
-            <marker date="1517075421230" expanded="true" signature="1503:2730" ph="{...}" />
-            <marker date="1517075421230" expanded="true" signature="1526:1556" ph="{...}" />
-            <marker date="1517075421230" expanded="true" signature="1678:1750" ph="{...}" />
-            <marker date="1517075421230" expanded="true" signature="1857:1878" ph="{...}" />
-            <marker date="1517075421230" expanded="true" signature="1938:2031" ph="{...}" />
-            <marker date="1517075421230" expanded="true" signature="2088:2157" ph="{...}" />
-            <marker date="1517075421230" expanded="true" signature="2232:2321" ph="{...}" />
-            <marker date="1517075421230" expanded="true" signature="2392:2512" ph="{...}" />
-            <marker date="1517075421230" expanded="true" signature="2581:2675" ph="{...}" />
-            <marker date="1517075421230" expanded="true" signature="2682:2724" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -213,14 +179,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="19" column="60" lean-forward="false" selection-start-line="19" selection-start-column="60" selection-end-line="19" selection-end-column="60" />
-          <folding>
-            <marker date="1517075421215" expanded="false" signature="6:116" ph="..." />
-            <marker date="1517075421215" expanded="true" signature="160:1244" ph="{...}" />
-            <marker date="1517075421215" expanded="true" signature="278:794" ph="{...}" />
-            <marker date="1517075421215" expanded="true" signature="848:1242" ph="{...}" />
-            <marker date="1517075421215" expanded="true" signature="946:998" ph="{...}" />
-            <marker date="1517075421215" expanded="true" signature="1050:1239" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -228,22 +186,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
           <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding>
-            <marker date="1517075421220" expanded="false" signature="6:78" ph="..." />
-            <marker date="1517075421220" expanded="true" signature="121:2132" ph="{...}" />
-            <marker date="1517075421220" expanded="true" signature="556:751" ph="{...}" />
-            <marker date="1517075421220" expanded="true" signature="796:827" ph="{...}" />
-            <marker date="1517075421220" expanded="true" signature="876:908" ph="{...}" />
-            <marker date="1517075421220" expanded="true" signature="963:1742" ph="{...}" />
-            <marker date="1517075421220" expanded="true" signature="979:1737" ph="{...}" />
-            <marker date="1517075421220" expanded="true" signature="986:1150" ph="/* Vector3 result = Vector3.Lerp (defaultPosition, deadPosition, 1f - 0.01f); ... */" />
-            <marker date="1517075421220" expanded="true" signature="1189:1318" ph="/* float focused = Mathf.Lerp (defaultCameraSize, defaultCameraSize-0.2f, 1f - 0.1f); ... */" />
-            <marker date="1517075421220" expanded="true" signature="1345:1732" ph="{...}" />
-            <marker date="1517075421220" expanded="true" signature="1391:1520" ph="{...}" />
-            <marker date="1517075421220" expanded="true" signature="1563:1681" ph="/* Camera.main.orthographicSize = defaultCameraSize; ... */" />
-            <marker date="1517075421220" expanded="true" signature="1793:2125" ph="{...}" />
-            <marker date="1517075421220" expanded="true" signature="1797:1959" ph="/* defaultCameraSize = Camera.main.orthographicSize; ... */" />
-          </folding>
         </state>
       </provider>
     </entry>
