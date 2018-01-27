@@ -1,6 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
-using System.Runtime.InteropServices;
 
 public class movControl : MonoBehaviour
 {
@@ -20,6 +18,7 @@ public class movControl : MonoBehaviour
 
 	public float FallMultiplier = 8f;
 	private float hasJumped;
+	
 	void Awake () {
 		_rb = GetComponent<Rigidbody2D> ();
 
@@ -40,6 +39,9 @@ public class movControl : MonoBehaviour
 			_rb.velocity = new Vector2 (move * MaxSpeed, _rb.velocity.y);
 		} else if (move < 0) {
 			_rb.velocity = new Vector2 (move * MaxSpeed, _rb.velocity.y);
+		}else
+		{
+			_rb.velocity = new Vector2(0, _rb.velocity.y);
 		}
 		
 		if (_rb.velocity.y < -0.05f)
