@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a70138ee-0ead-4322-8d4d-7b9c5604f830" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.ggj2018/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.ggj2018/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="a70138ee-0ead-4322-8d4d-7b9c5604f830" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -135,26 +133,26 @@
             <state relative-caret-position="362">
               <caret line="74" column="77" lean-forward="false" selection-start-line="74" selection-start-column="77" selection-end-line="74" selection-end-column="77" />
               <folding>
-                <marker date="1517083383115" expanded="false" signature="6:78" ph="..." />
-                <marker date="1517083383115" expanded="true" signature="113:3321" ph="{...}" />
-                <marker date="1517083383115" expanded="true" signature="432:691" ph="{...}" />
-                <marker date="1517083383115" expanded="true" signature="745:919" ph="{...}" />
-                <marker date="1517083383115" expanded="true" signature="765:916" ph="{...}" />
-                <marker date="1517083383115" expanded="true" signature="880:912" ph="{...}" />
-                <marker date="1517083383115" expanded="true" signature="964:1429" ph="{...}" />
-                <marker date="1517083383115" expanded="true" signature="1007:1098" ph="{...}" />
-                <marker date="1517083383115" expanded="true" signature="1147:1178" ph="{...}" />
-                <marker date="1517083383115" expanded="true" signature="1221:1230" ph="{...}" />
-                <marker date="1517083383115" expanded="true" signature="1327:1422" ph="/* this.gameObject.GetComponent&lt;Rigidbody2D&gt; ().velocity = Vector2.zero; ... */" />
-                <marker date="1517083383115" expanded="true" signature="1472:2133" ph="{...}" />
-                <marker date="1517083383115" expanded="true" signature="1774:1865" ph="{...}" />
-                <marker date="1517083383115" expanded="true" signature="1872:1968" ph="{...}" />
-                <marker date="1517083383115" expanded="true" signature="2027:2047" ph="{...}" />
-                <marker date="1517083383115" expanded="true" signature="2174:2639" ph="{...}" />
-                <marker date="1517083383115" expanded="true" signature="2330:2350" ph="{...}" />
-                <marker date="1517083383115" expanded="true" signature="2674:2957" ph="{...}" />
-                <marker date="1517083383115" expanded="true" signature="2989:3048" ph="{...}" />
-                <marker date="1517083383115" expanded="true" signature="3075:3317" ph="{...}" />
+                <marker date="1517087119927" expanded="false" signature="6:78" ph="..." />
+                <marker date="1517087119927" expanded="true" signature="113:3322" ph="{...}" />
+                <marker date="1517087119927" expanded="true" signature="432:691" ph="{...}" />
+                <marker date="1517087119927" expanded="true" signature="745:919" ph="{...}" />
+                <marker date="1517087119927" expanded="true" signature="765:916" ph="{...}" />
+                <marker date="1517087119927" expanded="true" signature="880:912" ph="{...}" />
+                <marker date="1517087119927" expanded="true" signature="964:1429" ph="{...}" />
+                <marker date="1517087119927" expanded="true" signature="1007:1098" ph="{...}" />
+                <marker date="1517087119927" expanded="true" signature="1147:1178" ph="{...}" />
+                <marker date="1517087119927" expanded="true" signature="1221:1230" ph="{...}" />
+                <marker date="1517087119927" expanded="true" signature="1327:1422" ph="/* this.gameObject.GetComponent&lt;Rigidbody2D&gt; ().velocity = Vector2.zero; ... */" />
+                <marker date="1517087119927" expanded="true" signature="1472:2134" ph="{...}" />
+                <marker date="1517087119927" expanded="true" signature="1775:1866" ph="{...}" />
+                <marker date="1517087119927" expanded="true" signature="1873:1969" ph="{...}" />
+                <marker date="1517087119927" expanded="true" signature="2028:2048" ph="{...}" />
+                <marker date="1517087119927" expanded="true" signature="2175:2640" ph="{...}" />
+                <marker date="1517087119927" expanded="true" signature="2331:2351" ph="{...}" />
+                <marker date="1517087119927" expanded="true" signature="2675:2958" ph="{...}" />
+                <marker date="1517087119927" expanded="true" signature="2990:3049" ph="{...}" />
+                <marker date="1517087119927" expanded="true" signature="3076:3318" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -302,7 +300,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19947916" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -400,26 +397,26 @@
         <state relative-caret-position="362">
           <caret line="74" column="77" lean-forward="false" selection-start-line="74" selection-start-column="77" selection-end-line="74" selection-end-column="77" />
           <folding>
-            <marker date="1517083383115" expanded="false" signature="6:78" ph="..." />
-            <marker date="1517083383115" expanded="true" signature="113:3321" ph="{...}" />
-            <marker date="1517083383115" expanded="true" signature="432:691" ph="{...}" />
-            <marker date="1517083383115" expanded="true" signature="745:919" ph="{...}" />
-            <marker date="1517083383115" expanded="true" signature="765:916" ph="{...}" />
-            <marker date="1517083383115" expanded="true" signature="880:912" ph="{...}" />
-            <marker date="1517083383115" expanded="true" signature="964:1429" ph="{...}" />
-            <marker date="1517083383115" expanded="true" signature="1007:1098" ph="{...}" />
-            <marker date="1517083383115" expanded="true" signature="1147:1178" ph="{...}" />
-            <marker date="1517083383115" expanded="true" signature="1221:1230" ph="{...}" />
-            <marker date="1517083383115" expanded="true" signature="1327:1422" ph="/* this.gameObject.GetComponent&lt;Rigidbody2D&gt; ().velocity = Vector2.zero; ... */" />
-            <marker date="1517083383115" expanded="true" signature="1472:2133" ph="{...}" />
-            <marker date="1517083383115" expanded="true" signature="1774:1865" ph="{...}" />
-            <marker date="1517083383115" expanded="true" signature="1872:1968" ph="{...}" />
-            <marker date="1517083383115" expanded="true" signature="2027:2047" ph="{...}" />
-            <marker date="1517083383115" expanded="true" signature="2174:2639" ph="{...}" />
-            <marker date="1517083383115" expanded="true" signature="2330:2350" ph="{...}" />
-            <marker date="1517083383115" expanded="true" signature="2674:2957" ph="{...}" />
-            <marker date="1517083383115" expanded="true" signature="2989:3048" ph="{...}" />
-            <marker date="1517083383115" expanded="true" signature="3075:3317" ph="{...}" />
+            <marker date="1517087119927" expanded="false" signature="6:78" ph="..." />
+            <marker date="1517087119927" expanded="true" signature="113:3322" ph="{...}" />
+            <marker date="1517087119927" expanded="true" signature="432:691" ph="{...}" />
+            <marker date="1517087119927" expanded="true" signature="745:919" ph="{...}" />
+            <marker date="1517087119927" expanded="true" signature="765:916" ph="{...}" />
+            <marker date="1517087119927" expanded="true" signature="880:912" ph="{...}" />
+            <marker date="1517087119927" expanded="true" signature="964:1429" ph="{...}" />
+            <marker date="1517087119927" expanded="true" signature="1007:1098" ph="{...}" />
+            <marker date="1517087119927" expanded="true" signature="1147:1178" ph="{...}" />
+            <marker date="1517087119927" expanded="true" signature="1221:1230" ph="{...}" />
+            <marker date="1517087119927" expanded="true" signature="1327:1422" ph="/* this.gameObject.GetComponent&lt;Rigidbody2D&gt; ().velocity = Vector2.zero; ... */" />
+            <marker date="1517087119927" expanded="true" signature="1472:2134" ph="{...}" />
+            <marker date="1517087119927" expanded="true" signature="1775:1866" ph="{...}" />
+            <marker date="1517087119927" expanded="true" signature="1873:1969" ph="{...}" />
+            <marker date="1517087119927" expanded="true" signature="2028:2048" ph="{...}" />
+            <marker date="1517087119927" expanded="true" signature="2175:2640" ph="{...}" />
+            <marker date="1517087119927" expanded="true" signature="2331:2351" ph="{...}" />
+            <marker date="1517087119927" expanded="true" signature="2675:2958" ph="{...}" />
+            <marker date="1517087119927" expanded="true" signature="2990:3049" ph="{...}" />
+            <marker date="1517087119927" expanded="true" signature="3076:3318" ph="{...}" />
           </folding>
         </state>
       </provider>
