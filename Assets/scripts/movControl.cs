@@ -30,6 +30,8 @@ public class movControl : MonoBehaviour
 	private bool _doubleJumped;
 
 	private bool flip;
+
+	private float _justDied = 0f;
 	
 	void Awake () {
 		_rb = GetComponent<Rigidbody2D> ();
@@ -40,6 +42,7 @@ public class movControl : MonoBehaviour
 
 	void Update()
 	{
+		if ( _justDied > 0) return;
 		_grounded = Physics2D.OverlapCircle (GroundCheck.position, groundRadius, WhatIsGround);
 		_touchingWall = Physics2D.OverlapCircle (WallJumpCheckLeft.position, wallJumpRadius, WhatIsGround);
 		if (!_touchingWall)
@@ -65,8 +68,11 @@ public class movControl : MonoBehaviour
 	}
 	
 	void FixedUpdate(){
-		
-		
+
+		if (_justDied > 0)
+		{
+			_justDied -= 0.1f;
+		};
 		//HORIZONTAL MOVE
 		
 		var move = Input.GetAxisRaw("Horizontal");
@@ -119,8 +125,13 @@ public class movControl : MonoBehaviour
 		
 	}
 
-	public void boom(){
-		GameManager.instance.onDead (transform.position);
+	public void boom()
+	{
+		_justDied = 1;
+		if (GameManager.instance)
+		{
+			GameManager.instance.onDead(transform.position);
+		}
 	}
 
 }
