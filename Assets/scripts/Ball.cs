@@ -57,9 +57,9 @@ public class Ball : MonoBehaviour
 		else if (coll.gameObject.tag == "Wall") {
 			
 		}else {
-			coll.gameObject.SendMessage ("boom", SendMessageOptions.DontRequireReceiver);
+			coll.gameObject.SendMessage ("boom", this, SendMessageOptions.DontRequireReceiver);
 			//this.gameObject.GetComponent<Rigidbody2D> ().velocity = Vector2.zero;
-			this.resetBall ();
+			//this.resetBall ();
 		}
 	}
 
@@ -99,11 +99,11 @@ public class Ball : MonoBehaviour
 		GetComponent<Rigidbody2D> ().velocity = new Vector2 (X, Y).normalized * speed;
 		shooted = true;
 
-		Debug.Log ("shooted :" + fromPaddle.transform.position + " BALL velocity:" + transform.GetComponent<Rigidbody2D>().velocity + " Fake paddle velocity:" + fromPaddle.FakeVelocity);
+		//Debug.Log ("shooted :" + fromPaddle.transform.position + " BALL velocity:" + transform.GetComponent<Rigidbody2D>().velocity + " Fake paddle velocity:" + fromPaddle.FakeVelocity);
 
 	}
 
-	private void resetBall ()
+	public void resetBall ()
 	{
 		transform.position = bottomPaddle.BallSpawnPoint.position;
 		GetComponent<Rigidbody2D> ().velocity = new Vector2 (0f, 0);

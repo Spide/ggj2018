@@ -125,18 +125,13 @@ public class movControl : MonoBehaviour
 		
 	}
 
-<<<<<<< HEAD
-	public void boom()
+
+	public void justDied()
 	{
 		_justDied = 1;
-		if (GameManager.instance)
-		{
-			GameManager.instance.onDead(transform.position);
-		}
-=======
-	public void boom(){
-		//GameManager.instance.onDead (transform.position);
->>>>>>> 365d64f34519fe3c3cbb4de10fe924b38bd86b96
+
+
 	}
+
 
 }

@@ -13,7 +13,7 @@ public class CloudMovement : MonoBehaviour
 
 		var sp = GetComponent<SpriteRenderer>();
 		var clone1 = Instantiate(gameObject);
-		clone1.
+		//clone1.
 		var clone2 = Instantiate(gameObject);
 
 	}
