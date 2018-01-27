@@ -32,10 +32,12 @@ public class movControl : MonoBehaviour
 	private bool flip;
 
 	private float _justDied = 0f;
+
+	private BearAnim _anim;
 	
 	void Awake () {
 		_rb = GetComponent<Rigidbody2D> ();
-
+		_anim = GetComponent<BearAnim>();
 		_kUp = KeyCode.UpArrow;
 		_kDown = KeyCode.DownArrow;		
 	}
@@ -122,7 +124,15 @@ public class movControl : MonoBehaviour
 		{
 			_hasJumped += Time.deltaTime ;
 		}
-		
+
+		if (_rb.velocity.magnitude < 0.01f && _grounded)
+		{
+			_anim.state = BearAnimState.Idle;
+		}
+		else
+		{
+			_anim.state = BearAnimState.Running;
+		}
 	}
 		
 
