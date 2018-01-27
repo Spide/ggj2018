@@ -28,6 +28,8 @@ public class movControl : MonoBehaviour
 	private float _hasJumped;
 	private bool _hasWallJump;
 	private bool _doubleJumped;
+
+	private bool flip;
 	
 	void Awake () {
 		_rb = GetComponent<Rigidbody2D> ();
@@ -53,6 +55,14 @@ public class movControl : MonoBehaviour
 			_doubleJumped = false;
 		}
 	}
+
+	private void DoFlip()
+	{
+		flip = !flip;
+		var ls = transform.localScale;
+		ls.x = flip ? -1 : 1;
+		transform.localScale = ls;
+	}
 	
 	void FixedUpdate(){
 		
@@ -66,6 +76,11 @@ public class movControl : MonoBehaviour
 			targetX = Mathf.Lerp(_rb.velocity.x, move * MaxSpeed, 0.5f);
 		}
 		_rb.velocity = new Vector2(targetX, _rb.velocity.y);
+
+		if (targetX < 0 && !flip || targetX > 0 && flip)
+		{
+			DoFlip();
+		}
 		
 		
 		// VERTICAL MOVE
