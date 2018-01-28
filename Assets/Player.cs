@@ -35,12 +35,11 @@ public class Player : MonoBehaviour {
 
 	public void boom(Ball byBall)
 	{
-		GetComponent<movControl> ().justDied ();
-
-
-
-		if (GameManager.instance) {
-			GameManager.instance.onDead (GetComponent<Player>(), byBall);
+		if (byBall.IsKillingAble) {
+			GetComponent<movControl> ().justDied ();
+			if (GameManager.instance) {
+				GameManager.instance.onDead (GetComponent<Player>(), byBall);
+			}
 		}
 
 	}
