@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a70138ee-0ead-4322-8d4d-7b9c5604f830" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.ggj2018/.idea/contentModel.xml" afterPath="$PROJECT_DIR$/.idea/.idea.ggj2018/.idea/contentModel.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/gfx/tiles/Underground_bottom_1.png.meta" afterPath="$PROJECT_DIR$/Assets/gfx/tiles/Underground_bottom_1.png.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/gfx/tiles/Underground_bottom_2.png.meta" afterPath="$PROJECT_DIR$/Assets/gfx/tiles/Underground_bottom_2.png.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/gfx/tiles/Underground_upper_1.png.meta" afterPath="$PROJECT_DIR$/Assets/gfx/tiles/Underground_upper_1.png.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/gfx/tiles/Underground_upper_2.png.meta" afterPath="$PROJECT_DIR$/Assets/gfx/tiles/Underground_upper_2.png.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/prefab/p1.prefab" afterPath="$PROJECT_DIR$/Assets/prefab/p1.prefab" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/scenes/Background.unity" afterPath="$PROJECT_DIR$/Assets/scenes/Background.unity" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/scenes/testscene.unity" afterPath="$PROJECT_DIR$/Assets/scenes/testscene.unity" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/scripts/DustParticle.cs" afterPath="$PROJECT_DIR$/Assets/scripts/DustParticle.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/scripts/GroundPopulator.cs" afterPath="$PROJECT_DIR$/Assets/scripts/GroundPopulator.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/scripts/StepsDust.cs" afterPath="$PROJECT_DIR$/Assets/scripts/StepsDust.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/scripts/movControl.cs" afterPath="$PROJECT_DIR$/Assets/scripts/movControl.cs" />
-    </list>
+    <list default="true" id="a70138ee-0ead-4322-8d4d-7b9c5604f830" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
