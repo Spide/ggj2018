@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour {
 
+	public int lives = 3;
+
 	bool fieldEnabled = false;
 	float fieldTimer = 0;
 
@@ -35,6 +37,8 @@ public class Player : MonoBehaviour {
 	{
 		GetComponent<movControl> ().justDied ();
 
+
+
 		if (GameManager.instance) {
 			GameManager.instance.onDead (GetComponent<Player>(), byBall);
 		}
@@ -55,6 +59,9 @@ public class Player : MonoBehaviour {
 	}
 
 	public void respawn(Vector2 spawnPoint){
+
+		lives -= 1;
+
 		transform.position = spawnPoint;
 		_anim.state = BearAnimState.Idle;
 	}
