@@ -10552,11 +10552,23 @@ MonoBehaviour:
   - {fileID: 21300000, guid: bbeb40b5ea2af7c4bb4a688975ba88d8, type: 3}
   jumpDownAnim:
   - {fileID: 21300000, guid: 54371b8c88310474ea7dacd7c1930063, type: 3}
-  dyingAnim: []
-  prayingAnim: []
+  dyingAnim:
+  - {fileID: 21300000, guid: 7784999cd387df24f8bd50ccfee67c3d, type: 3}
+  - {fileID: 21300000, guid: f2fa8faec483a3b42aef28f0fef1884d, type: 3}
+  - {fileID: 21300000, guid: 5d289085015817e4eadac0a52dfe555b, type: 3}
+  - {fileID: 21300000, guid: 426a1ddb3dbde624c8aa0f8999e52b95, type: 3}
+  - {fileID: 21300000, guid: e1d38aa16c2720f4c8b97c90bda50b65, type: 3}
+  - {fileID: 21300000, guid: a1983d2e3b05dfa48a9a6c47e44c4556, type: 3}
+  - {fileID: 21300000, guid: 3da5e215c945ac64baa1621af38ac1db, type: 3}
+  - {fileID: 21300000, guid: 4a97eb6f38b9b904abb3e9b1c556fd54, type: 3}
+  - {fileID: 21300000, guid: e4d347ff022c2a140bf7f5d15a302d6e, type: 3}
+  prayingAnim:
+  - {fileID: 21300000, guid: fda3b8eb2cfd56a4689e65a2b20875d2, type: 3}
+  - {fileID: 21300000, guid: f49dd08fb9668e94589a024eb08111fb, type: 3}
+  - {fileID: 21300000, guid: bdbe63fd3e2b7cb4fb586209d2fd7b87, type: 3}
   idleFPS: 3
   runFPS: 24
-  dyingFPS: 10
+  dyingFPS: 40
   prayingFPS: 10
 --- !u!1 &1564728806
 GameObject:
