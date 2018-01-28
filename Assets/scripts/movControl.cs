@@ -63,6 +63,12 @@ public class movControl : MonoBehaviour
 	
 	}
 
+	public void RunePickedUp()
+	{
+		IsPicking = false;
+		runePickup.Play();
+	}
+
 	private void Start()
 	{
 		_dust = FindObjectOfType<StepsDust>();
@@ -193,6 +199,7 @@ public class movControl : MonoBehaviour
 		_justDied = 1;
 		_rb.velocity = new Vector2(_rb.velocity.x/4, _rb.velocity.y);
 		_anim.state = BearAnimState.Dying;
+		damagePickup.Play();
 		print("JUST DIED");
 	}
 }

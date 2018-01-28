@@ -51,7 +51,7 @@ public class PickupPoint : MonoBehaviour
 	public void picked(){
 		picking = false;
 		GameManager.instance.finishedPickupPoint (this);
-		FindObjectOfType<movControl>().IsPicking = false;
+		FindObjectOfType<movControl>().RunePickedUp();
 		transform.Find ("rune").GetComponent<Animator> ().SetTrigger ("picked");
 		transform.Find ("rune").GetComponent<Animator> ().SetBool ("hidden", true);
 	}
