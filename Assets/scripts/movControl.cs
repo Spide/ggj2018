@@ -2,6 +2,11 @@
 
 public class movControl : MonoBehaviour
 {
+
+	public AudioSource jumpSound;
+	public AudioSource runePickup;
+	public AudioSource damagePickup;
+	
 	public float MaxSpeed;
 	public float JumpVelocity = 2;
 	public float DoubleJumpVelocity = 3;
@@ -133,16 +138,19 @@ public class movControl : MonoBehaviour
 		{
 			_hasJumped = 0;
 			_rb.velocity = new Vector2 (_rb.velocity.x, JumpVelocity);
+			jumpSound.Play();
 		}else if (!_doubleJumped && _hasJumped > 0.1f && Input.GetButtonDown(_kUp))
 		{
 			_hasJumped = 0;
 			_doubleJumped = true;
 			_rb.velocity = new Vector2(_rb.velocity.x, DoubleJumpVelocity);
+			jumpSound.Play();
 		}
 		else if (_touchingWall && !_hasWallJump && Input.GetButtonDown(_kUp))
 		{
 			_hasWallJump = true;
 			_rb.velocity = new Vector2(-_rb.velocity.x, JumpVelocity);
+			jumpSound.Play();
 		}
 		else
 		{
