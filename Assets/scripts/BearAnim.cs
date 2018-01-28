@@ -21,7 +21,6 @@ public class BearAnim : MonoBehaviour
 			}
 			_state = value;
 			_currentAnim = dict[_state];
-			print("setting state "+ _state);
 			sp.sprite = _currentAnim[0];
 			_animTime = 0;
 			_currentFrame = 0;

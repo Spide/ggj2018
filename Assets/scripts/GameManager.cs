@@ -72,10 +72,9 @@ public class GameManager : MonoBehaviour {
 		string finaLText = "Winner is: " + winner + "" + " \n" + reason;
 
 		var text = GameObject.Find ("EndGameText").GetComponent<UnityEngine.UI.Text> ();
-
 		text.enabled = true;
 		text.text = finaLText;
-
+		print(finaLText);
 	}
 
 

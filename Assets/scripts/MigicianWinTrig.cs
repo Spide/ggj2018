@@ -8,7 +8,7 @@ public class MigicianWinTrig : MonoBehaviour {
 	private void OnTriggerEnter2D(Collider2D other)
 	{
 //		SceneManager.LoadScene("EndAnimScene");
-		//GameManager.instance.
+		GameManager.instance.EndGame("Bear","You did it!");
 	}
 	
 }
