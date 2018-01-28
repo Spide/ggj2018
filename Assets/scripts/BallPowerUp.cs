@@ -16,6 +16,8 @@ public class BallPowerUp : PowerUp
 		newBallB.isBonus = true;
 		newBallB.resetBall ();
 		newBall.GetComponent<SpriteRenderer> ().color = Color.green;
+
+		Debug.Log (newBallB);
 	}
 }
 

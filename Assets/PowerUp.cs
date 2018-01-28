@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PowerUp : MonoBehaviour {
+public abstract class PowerUp : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {

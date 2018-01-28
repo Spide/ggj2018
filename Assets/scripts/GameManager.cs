@@ -19,9 +19,12 @@ public class GameManager : MonoBehaviour {
 
 	private List<Transform> spawnPoints;
 
+	public List<PowerUp> powerUps;
 	private List<Transform> powerUpPoints;
 
+	public List<Sprite> runes;
 	private List<PickupPoint> pickupPoints;
+
 
 	private PickupPoint actualPickupPoint;
 
@@ -76,6 +79,8 @@ public class GameManager : MonoBehaviour {
 			return;
 		}
 
+		actualPickupPoint.GetComponent<SpriteRenderer> ().sprite = runes [runes.Count - 1];
+		runes.RemoveAt (runes.Count-1);
 
 		actualPickupPoint.activatePoint ();
 	}
@@ -145,10 +150,10 @@ public class GameManager : MonoBehaviour {
 			playersDead.Add (player, byBall);
 
 			//Camera.main.orthographicSize = defaultCameraSize - 0.2f;
-			Time.timeScale = 0.5f;
+			Time.timeScale = 0.2f;
 
 			focus = true;
-			timeToFocus = 0.5f;
+			timeToFocus = 0.2f;
 		}
 
 	}
