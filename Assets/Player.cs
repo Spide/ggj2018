@@ -61,6 +61,10 @@ public class Player : MonoBehaviour {
 
 		lives -= 1;
 
+		if (lives <= 0) {
+			GameManager.instance.EndGame ("Demon" , "Bear is dead! World is gonna die!\n Are you happy ?");
+		}
+
 		transform.position = spawnPoint;
 		_anim.state = BearAnimState.Idle;
 	}

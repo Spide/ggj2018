@@ -65,6 +65,20 @@ public class GameManager : MonoBehaviour {
 
 	}
 
+
+
+	public void EndGame(string winner, string reason){
+
+		string finaLText = "Winner is: " + winner + "" + " \n" + reason;
+
+		var text = GameObject.Find ("EndGameText").GetComponent<UnityEngine.UI.Text> ();
+
+		text.enabled = true;
+		text.text = finaLText;
+
+	}
+
+
 	public void chooseNextPickupPoint(){
 
 		if (actualPickupPoint == null) {
@@ -82,7 +96,6 @@ public class GameManager : MonoBehaviour {
 			actualPickupPoint = farest;
 		} else {
 			// win state
-			Debug.Log("winner");
 			FindObjectOfType<Migician>().EndGameEnable();			
 			return;
 		}
@@ -136,7 +149,7 @@ public class GameManager : MonoBehaviour {
 	}
 
 	private void timeIsUp(){
-		
+		EndGame ("Demon" , "Bear is slow!");
 	}
 
 
