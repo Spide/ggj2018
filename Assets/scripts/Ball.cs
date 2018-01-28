@@ -19,7 +19,7 @@ public class Ball : MonoBehaviour
 	private bool readyToShoot = true;
 
 
-
+	private Rigidbody2D _rb;
 
 	// Use this for initialization
 	void Start ()
@@ -32,7 +32,7 @@ public class Ball : MonoBehaviour
 		if (bottomPaddle == null)
 			bottomPaddle = GameObject.Find ("PaddleBottom").gameObject.GetComponent<Paddle>();
 
-
+		_rb = GetComponent<Rigidbody2D>();
 	}
 	
 	// Update is called once per frame
@@ -69,17 +69,19 @@ public class Ball : MonoBehaviour
 
 		//Debug.Log ("on hit Paddle position :" + paddle.transform.position + " BALL velocity:" + transform.GetComponent<Rigidbody2D>().velocity + " Fake paddle velocity:" + paddle.FakeVelocity);
 
+		var v = _rb.velocity;
+		
 		float X = 0;
 
 		// calc angle
-		if (Mathf.Abs((paddle.transform.position - transform.position).x) > 0.55f)
+		if (Mathf.Abs((paddle.transform.position - transform.position).x) > 1.0f)
 		{
 			X = -(paddle.transform.position - transform.position).x * paddleDragMultiplier;
 		}
 		else
 		{
 			// add velocity of paddle
-			X = X + (paddle.FakeVelocity * velocityDragMultiplier);
+			X = v.x + (paddle.FakeVelocity * velocityDragMultiplier);
 		}
 
 		float Y = speed;
@@ -88,7 +90,7 @@ public class Ball : MonoBehaviour
 			Y = -speed;
 		} 
 
-		GetComponent<Rigidbody2D> ().velocity = new Vector2 (X, Y).normalized * speed;
+		_rb.velocity = new Vector2 (X, Y).normalized * speed;
 	}
 
 	private void shoot (Paddle fromPaddle)
