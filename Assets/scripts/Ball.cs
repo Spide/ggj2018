@@ -61,7 +61,13 @@ public class Ball : MonoBehaviour
 			}
 		}
 		else if (coll.gameObject.tag == "Wall") {
-			
+
+		}else if (coll.gameObject.name == "ForceField") {
+			if (isBonus) {
+				Destroy (this.gameObject);
+			} else {
+				requestRestartBall ();
+			}
 		}else {
 			coll.gameObject.SendMessage ("boom", this, SendMessageOptions.DontRequireReceiver);
 			//this.gameObject.GetComponent<Rigidbody2D> ().velocity = Vector2.zero;
@@ -116,9 +122,19 @@ public class Ball : MonoBehaviour
 
 	}
 
+	Color actualColor;
+
 	public void requestRestartBall(){
+
+		if (isBonus) {
+			Destroy (this.gameObject);
+			return;
+		}
+			
+
+		actualColor = GetComponent<SpriteRenderer> ().color;
 		
-		GetComponent<SpriteRenderer> ().color = new Color (1f, 1f, 1f, 0.3f);
+		GetComponent<SpriteRenderer> ().color = new Color (actualColor.r, actualColor.g, actualColor.a, 0.3f);
 		transform.position = bottomPaddle.BallSpawnPoint.position;
 		GetComponent<Rigidbody2D> ().velocity = new Vector2 (0f, 0);
 		shooted = false;
@@ -135,7 +151,9 @@ public class Ball : MonoBehaviour
 
 	public void resetBall ()
 	{
-		GetComponent<SpriteRenderer> ().color = new Color (1f, 1f, 1f, 1f);
+		actualColor = GetComponent<SpriteRenderer> ().color;
+
+		GetComponent<SpriteRenderer> ().color = new Color (actualColor.r, actualColor.g, actualColor.a, 1f);
 		transform.position = bottomPaddle.BallSpawnPoint.position;
 		GetComponent<Rigidbody2D> ().velocity = new Vector2 (0f, 0);
 		shooted = false;

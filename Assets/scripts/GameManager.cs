@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour {
 
 	private List<Transform> spawnPoints;
 
+	private List<Transform> powerUpPoints;
+
 	private List<PickupPoint> pickupPoints;
 
 	private PickupPoint actualPickupPoint;
@@ -31,6 +33,8 @@ public class GameManager : MonoBehaviour {
 		playersDead = new Dictionary<Player, Ball> ();
 
 		spawnPoints = new List<Transform> ();
+
+		powerUpPoints = new List<Transform> ();
 
 		pickupPoints = new List<PickupPoint> ();
 

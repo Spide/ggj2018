@@ -14,24 +14,27 @@ public class PowerUp : MonoBehaviour {
 		
 	}
 
-	public void pickupBy(Player player){
+	public  virtual void pickupBy(Player player){
 		
+
 	}
 
-	public void pickupBy(Ball ball){
+	public virtual void pickupBy(Ball ball){
 
-		Instantiate (ball.gameObject);
-		
 	}
 
-	void OnCollisionEnter2D (Collision2D coll)
+	void OnTriggerEnter2D (Collider2D coll)
 	{
+		//Debug.Log ("triggered"+coll.gameObject.name);
+
 		if (coll.gameObject.tag == "Player") {
 			pickupBy (coll.gameObject.GetComponent<Player> ());
 		}
 		else if (coll.gameObject.tag == "Ball") {
 			pickupBy (coll.gameObject.GetComponent<Ball> ());
 		}
+
+		Destroy(this.gameObject);
 
 	}
 }
