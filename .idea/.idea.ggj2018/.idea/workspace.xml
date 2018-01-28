@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a70138ee-0ead-4322-8d4d-7b9c5604f830" name="Default" comment="" />
+    <list default="true" id="a70138ee-0ead-4322-8d4d-7b9c5604f830" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/gfx/shield.png" afterPath="$PROJECT_DIR$/Assets/gfx/shield.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.ggj2018/.idea/contentModel.xml" afterPath="$PROJECT_DIR$/.idea/.idea.ggj2018/.idea/contentModel.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.ggj2018/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.ggj2018/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/gfx/shield.png.meta" afterPath="$PROJECT_DIR$/Assets/gfx/shield.png.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/scenes/Background.unity" afterPath="$PROJECT_DIR$/Assets/scenes/Background.unity" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -132,23 +139,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DustParticle.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/scripts/DustParticle.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="33" column="24" lean-forward="false" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
-              <folding>
-                <marker date="1517134229474" expanded="false" signature="6:78" ph="..." />
-                <marker date="1517134229474" expanded="true" signature="121:714" ph="{...}" />
-                <marker date="1517134229474" expanded="true" signature="221:388" ph="{...}" />
-                <marker date="1517134229474" expanded="true" signature="391:458" ph="/* Use this for initialization ... */" />
-                <marker date="1517134229474" expanded="true" signature="474:712" ph="{...}" />
-                <marker date="1517134229474" expanded="true" signature="669:709" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Player.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Player.cs">
           <provider selected="true" editor-type-id="text-editor">
@@ -163,7 +153,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameManager.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GameManager.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/scripts/GameManager.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="295">
@@ -194,6 +184,21 @@
                 <marker date="1517139325422" expanded="true" signature="3324:3706" ph="{...}" />
                 <marker date="1517139325422" expanded="true" signature="3328:3490" ph="/* defaultCameraSize = Camera.main.orthographicSize; ... */" />
                 <marker date="1517139325422" expanded="true" signature="3529:3702" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IntroScreen.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/introScreen/IntroScreen.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+              <folding>
+                <marker date="1517144352366" expanded="true" signature="6:113" ph="..." />
+                <marker date="1517144352366" expanded="true" signature="155:418" ph="{...}" />
+                <marker date="1517144352366" expanded="true" signature="231:250" ph="{...}" />
+                <marker date="1517144352366" expanded="true" signature="312:416" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -272,6 +277,7 @@
     <setting file="file://$PROJECT_DIR$/../../../LD40/LD40/Assets/scripts/PlayButton.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/Assets/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/SpawnPoint.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/introScreen/IntroScreen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/scripts/BearAnim.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/scripts/StepsDust.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/scripts/Levitating.cs" root0="FORCE_HIGHLIGHTING" />
@@ -292,6 +298,7 @@
         <option value="$PROJECT_DIR$/Assets/scripts/movControl.cs" />
         <option value="$PROJECT_DIR$/Assets/scripts/PickupPoint.cs" />
         <option value="$PROJECT_DIR$/Assets/scripts/Ball.cs" />
+        <option value="$PROJECT_DIR$/Assets/introScreen/IntroScreen.cs" />
       </list>
     </option>
   </component>
@@ -339,6 +346,13 @@
               <item name="ggj2018 (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="ggj2018 (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="introScreen" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
@@ -419,7 +433,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -872,6 +886,19 @@
             <marker date="1517139325422" expanded="true" signature="3324:3706" ph="{...}" />
             <marker date="1517139325422" expanded="true" signature="3328:3490" ph="/* defaultCameraSize = Camera.main.orthographicSize; ... */" />
             <marker date="1517139325422" expanded="true" signature="3529:3702" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/introScreen/IntroScreen.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding>
+            <marker date="1517144352366" expanded="true" signature="6:113" ph="..." />
+            <marker date="1517144352366" expanded="true" signature="155:418" ph="{...}" />
+            <marker date="1517144352366" expanded="true" signature="231:250" ph="{...}" />
+            <marker date="1517144352366" expanded="true" signature="312:416" ph="{...}" />
           </folding>
         </state>
       </provider>
