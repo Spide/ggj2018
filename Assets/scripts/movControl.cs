@@ -19,7 +19,8 @@ public class movControl : MonoBehaviour
 	public LayerMask WhatIsGround; 
 	private Rigidbody2D _rb;
 
-	private KeyCode _kUp;
+	//private KeyCode _kUp;
+	private string _kUp = "Jump";
 	private KeyCode _kDown;
 
 	public float FallMultiplier = 16f;
@@ -38,7 +39,7 @@ public class movControl : MonoBehaviour
 	void Awake () {
 		_rb = GetComponent<Rigidbody2D> ();
 		_anim = GetComponent<BearAnim>();
-		_kUp = KeyCode.UpArrow;
+		//_kUp = KeyCode.UpArrow;
 		_kDown = KeyCode.DownArrow;		
 	}
 
@@ -98,24 +99,24 @@ public class movControl : MonoBehaviour
 			_hasJumped = 1;
 			_rb.velocity += Vector2.down *FallMultiplier * Time.deltaTime;
 		}
-		else if (_rb.velocity.y > 0.05f && Input.GetKey(_kUp))
+		else if (_rb.velocity.y > 0.05f && Input.GetButton(_kUp))
 		{
 			_rb.velocity += Vector2.up*JumpMultiplier*Time.deltaTime;
 		}
 
 		//JUMP
 		
-		if ( _grounded  && _hasJumped > 0.3f && Input.GetKey(_kUp))
+		if ( _grounded  && _hasJumped > 0.3f && Input.GetButton(_kUp))
 		{
 			_hasJumped = 0;
 			_rb.velocity = new Vector2 (_rb.velocity.x, JumpVelocity);
-		}else if (!_doubleJumped && _hasJumped > 0.1f && Input.GetKeyDown(_kUp))
+		}else if (!_doubleJumped && _hasJumped > 0.1f && Input.GetButtonDown(_kUp))
 		{
 			_hasJumped = 0;
 			_doubleJumped = true;
 			_rb.velocity = new Vector2 (_rb.velocity.x, DoubleJumpVelocity);
 		}
-		else if (_touchingWall && !_hasWallJump && Input.GetKeyDown(_kUp))
+		else if (_touchingWall && !_hasWallJump && Input.GetButtonDown(_kUp))
 		{
 			_hasWallJump = true;
 			_rb.velocity = new Vector2(-_rb.velocity.x, JumpVelocity);

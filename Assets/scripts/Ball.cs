@@ -67,7 +67,7 @@ public class Ball : MonoBehaviour
 	private void paddleBounce(Paddle paddle){
 		
 
-		Debug.Log ("on hit Paddle position :" + paddle.transform.position + " BALL velocity:" + transform.GetComponent<Rigidbody2D>().velocity + " Fake paddle velocity:" + paddle.FakeVelocity);
+		//Debug.Log ("on hit Paddle position :" + paddle.transform.position + " BALL velocity:" + transform.GetComponent<Rigidbody2D>().velocity + " Fake paddle velocity:" + paddle.FakeVelocity);
 
 		float X = 0;
 
