@@ -728,11 +728,13 @@ MonoBehaviour:
   powerUps:
   - {fileID: 114801735222802368, guid: d082ba4bd8a314b30b9310bd05c363e8, type: 2}
   runes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 8088900ba1b4add4eb4dbd6f3c38d172, type: 3}
+  - {fileID: 21300000, guid: 19a858d25e2a4954d9535281d647a50e, type: 3}
+  - {fileID: 21300000, guid: 0b518370613844946819c9f266a4a8bf, type: 3}
+  - {fileID: 21300000, guid: a21e2831c8d44da458559534c629b9c3, type: 3}
+  - {fileID: 21300000, guid: 1ee379623cb9b7041bbadcf43f33bd4d, type: 3}
+  - {fileID: 21300000, guid: a70c0b9dd3847bb47828a572ccc96a45, type: 3}
+  - {fileID: 21300000, guid: 41285408016afb146aba2edde3e74447, type: 3}
 --- !u!4 &1608048406
 Transform:
   m_ObjectHideFlags: 0
@@ -889,11 +891,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4456647584315406, guid: d082ba4bd8a314b30b9310bd05c363e8, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.71
+      value: 7.01
       objectReference: {fileID: 0}
     - target: {fileID: 4456647584315406, guid: d082ba4bd8a314b30b9310bd05c363e8, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.95
+      value: 1.01
       objectReference: {fileID: 0}
     - target: {fileID: 4456647584315406, guid: d082ba4bd8a314b30b9310bd05c363e8, type: 2}
       propertyPath: m_LocalPosition.z

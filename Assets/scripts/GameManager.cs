@@ -102,6 +102,9 @@ public class GameManager : MonoBehaviour {
 
 		powerupAvailable = true;
 		GameObject pow = GameObject.Instantiate (powerUp.gameObject);
+		pow.transform.position = powerUpPoints [Random.Range (0, powerUpPoints.Count-1)].position;
+
+
 
 	}
 
