@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
+	public bool isBonus;
 
 	public float defaultBallSpeed = 5;
 	public float speed;
@@ -53,7 +54,11 @@ public class Ball : MonoBehaviour
 			Paddle paddle = coll.gameObject.GetComponent<Paddle> ();
 			paddleBounce (paddle);
 		} else if (coll.gameObject.tag == "BallDeadZone") {
-			requestRestartBall ();
+			if (isBonus) {
+				Destroy (this.gameObject);
+			} else {
+				requestRestartBall ();
+			}
 		}
 		else if (coll.gameObject.tag == "Wall") {
 			
@@ -67,7 +72,7 @@ public class Ball : MonoBehaviour
 	private void paddleBounce(Paddle paddle){
 		
 
-		Debug.Log ("on hit Paddle position :" + paddle.transform.position + " BALL velocity:" + transform.GetComponent<Rigidbody2D>().velocity + " Fake paddle velocity:" + paddle.FakeVelocity);
+		//Debug.Log ("on hit Paddle position :" + paddle.transform.position + " BALL velocity:" + transform.GetComponent<Rigidbody2D>().velocity + " Fake paddle velocity:" + paddle.FakeVelocity);
 
 		var v = _rb.velocity;
 		

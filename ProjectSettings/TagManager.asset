@@ -8,6 +8,7 @@ TagManager:
   - BallDeadZone
   - Paddle
   - Wall
+  - PowerUp
   layers:
   - Default
   - TransparentFX
@@ -19,7 +20,7 @@ TagManager:
   - 
   - Ground
   - Arkanoid
-  - 
+  - ForceField
   - 
   - 
   - 
