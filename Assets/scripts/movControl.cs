@@ -33,11 +33,19 @@ public class movControl : MonoBehaviour
 
 	private BearAnim _anim;
 
+	private StepsDust _dust;
+	private float _dustTimer = 0;
+
 	void Awake()
 	{
 		_rb = GetComponent<Rigidbody2D>();
 		_anim = GetComponent<BearAnim>();
 	
+	}
+
+	private void Start()
+	{
+		_dust = FindObjectOfType<StepsDust>();
 	}
 
 	void Update()
@@ -71,7 +79,7 @@ public class movControl : MonoBehaviour
 	{
 		if (_justDied > 0)
 		{
-			_justDied -= 0.1f;
+			_justDied -= 0.08f;
 			return;
 		}
 		;
@@ -145,6 +153,15 @@ public class movControl : MonoBehaviour
 		{
 			_anim.state = BearAnimState.JumpDown;
 		}
+		
+		// DUST
+
+		if (_grounded && _anim.state == BearAnimState.Running)
+		{
+			_dust.Add(transform.localPosition);
+			//_dustTimer = 0.01f;
+		}
+		//_dustTimer -= Time.deltaTime;
 	}
 
 

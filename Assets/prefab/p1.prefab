@@ -84,7 +84,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1408241674016468}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.48, y: -1.4, z: -0.04241034}
+  m_LocalPosition: {x: -1.526, y: -1.269, z: -0.04241034}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4907532630129100}
@@ -237,6 +237,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 986429f6c56200e43b74706272df2783, type: 3}
   - {fileID: 21300000, guid: 778d50587132fa049a23729f7b78e766, type: 3}
   - {fileID: 21300000, guid: a0dab3e13ca5e794ab3afd75f3a6a7c1, type: 3}
+  jumpUpAnim:
+  - {fileID: 21300000, guid: bbeb40b5ea2af7c4bb4a688975ba88d8, type: 3}
+  jumpDownAnim:
+  - {fileID: 21300000, guid: 54371b8c88310474ea7dacd7c1930063, type: 3}
   idleFPS: 3
   runFPS: 24
 --- !u!212 &212848356349283548
