@@ -34,6 +34,8 @@ public abstract class PowerUp : MonoBehaviour {
 			pickupBy (coll.gameObject.GetComponent<Ball> ());
 		}
 
+		GameManager.instance.powerupPicked (this);
+
 		Destroy(this.gameObject);
 
 	}

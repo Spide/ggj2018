@@ -6,7 +6,7 @@ public class PowerUpSpawnPoint : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+		GameManager.instance.addPowerUpSpawnPoint (this.transform);
 	}
 	
 	// Update is called once per frame

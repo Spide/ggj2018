@@ -28,6 +28,9 @@ public class GameManager : MonoBehaviour {
 
 	private PickupPoint actualPickupPoint;
 
+	private bool powerupAvailable = false;
+	private float nextPowerUpTimeer = 5;
+
 	// Use this for initialization
 	void Awake () {
 
@@ -54,6 +57,8 @@ public class GameManager : MonoBehaviour {
 
 		chooseNextPickupPoint ();
 
+		//activateNewPowerUp (powerUps[Random.Range(0, powerUps.Count-1)]);
+
 
 	}
 
@@ -79,10 +84,23 @@ public class GameManager : MonoBehaviour {
 			return;
 		}
 
-		actualPickupPoint.GetComponent<SpriteRenderer> ().sprite = runes [runes.Count - 1];
+		actualPickupPoint.transform.Find("rune").GetComponent<SpriteRenderer> ().sprite = runes [runes.Count - 1];
 		runes.RemoveAt (runes.Count-1);
 
 		actualPickupPoint.activatePoint ();
+	}
+
+	public void powerupPicked(PowerUp powerUp){
+
+		powerupAvailable = false;
+		nextPowerUpTimeer = 5;
+	}
+
+	public void activateNewPowerUp(PowerUp powerUp){
+
+		powerupAvailable = true;
+		GameObject pow = GameObject.Instantiate (powerUp.gameObject);
+
 	}
 
 	public void addSpawnPoint(Transform point){
@@ -92,6 +110,10 @@ public class GameManager : MonoBehaviour {
 
 	public void addPickupPoint(PickupPoint point){
 		pickupPoints.Add (point);
+	}
+
+	public void addPowerUpSpawnPoint(Transform point){
+		powerUpPoints.Add (point);
 	}
 
 	public void finishedPickupPoint(PickupPoint point){
@@ -108,15 +130,7 @@ public class GameManager : MonoBehaviour {
 	void Update () {
 
 		if (focus) {
-
-
-			//Vector3 result = Vector3.Lerp (defaultPosition, deadPosition, 1f - 0.01f);
-			//Camera.main.gameObject.transform.position = new Vector3(result.x, result.y, -10f);
 			timeToFocus -= Time.deltaTime;
-
-			//float focused = Mathf.Lerp (defaultCameraSize, defaultCameraSize-0.2f, 1f - 0.1f);
-			//Camera.main.orthographicSize = focused;
-
 			if (timeToFocus <= 0) {
 
 				foreach (Player p in playersDead.Keys) {
@@ -127,14 +141,20 @@ public class GameManager : MonoBehaviour {
 
 				playersDead.Clear ();
 					
-				
-				//Camera.main.orthographicSize = defaultCameraSize;
-				//Camera.main.gameObject.transform.position = defaultPosition;
 				Time.timeScale = 1f;
 
 				focus = false; 
 			} 
 		}
+
+		if (!powerupAvailable) {
+			if(nextPowerUpTimeer <= 0){
+				activateNewPowerUp ( powerUps[Random.Range(0, powerUps.Count-1)]);
+			}
+
+			nextPowerUpTimeer -= Time.deltaTime;
+		}
+
 
 
 	}
