@@ -183,6 +183,8 @@ public class movControl : MonoBehaviour
 	public void justDied()
 	{
 		_justDied = 1;
+		_rb.velocity = new Vector2(_rb.velocity.x/4, _rb.velocity.y);
 		_anim.state = BearAnimState.Dying;
+		print("JUST DIED");
 	}
 }

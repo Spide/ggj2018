@@ -15,6 +15,7 @@
           </e>
         </e>
         <e p="PowerUp.cs" t="Include" />
+        <e p="PowerUpSpawnPoint.cs" t="Include" />
         <e p="scripts" t="Include">
           <e p="Ball.cs" t="Include" />
           <e p="BallPowerUp.cs" t="Include" />

@@ -51,7 +51,7 @@ public class PickupPoint : MonoBehaviour
 	public void picked(){
 		picking = false;
 		GameManager.instance.finishedPickupPoint (this);
-
+		FindObjectOfType<movControl>().IsPicking = false;
 		transform.Find ("rune").GetComponent<Animator> ().SetTrigger ("picked");
 		transform.Find ("rune").GetComponent<Animator> ().SetBool ("hidden", true);
 	}
@@ -81,7 +81,10 @@ public class PickupPoint : MonoBehaviour
 	{
 		if (coll.gameObject.CompareTag("Player")) {
 			startPicking ();
-			coll.gameObject.GetComponent<movControl>().IsPicking = true;
+			if (isActivated)
+			{
+				coll.gameObject.GetComponent<movControl>().IsPicking = true;
+			}
 		}
 	}
 
@@ -89,7 +92,10 @@ public class PickupPoint : MonoBehaviour
 	{
 		if (coll.gameObject.CompareTag("Player")) {
 			endPicking ();
-			coll.gameObject.GetComponent<movControl>().IsPicking = false;
+			if (isActivated)
+			{
+				coll.gameObject.GetComponent<movControl>().IsPicking = false;
+			}
 		}
 	}
 }

@@ -84,7 +84,9 @@ public class GameManager : MonoBehaviour {
 			return;
 		}
 
+
 		actualPickupPoint.transform.Find("rune").GetComponent<SpriteRenderer> ().sprite = runes [runes.Count - 1];
+
 		runes.RemoveAt (runes.Count-1);
 
 		actualPickupPoint.activatePoint ();
