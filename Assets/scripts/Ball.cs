@@ -72,7 +72,7 @@ public class Ball : MonoBehaviour
 		float X = 0;
 
 		// calc angle
-		if (Mathf.Abs((paddle.transform.position - transform.position).x) > 0.55f)
+		if (Mathf.Abs((paddle.transform.position - transform.position).x) > 1.0f)
 		{
 			X = -(paddle.transform.position - transform.position).x * paddleDragMultiplier;
 		}
