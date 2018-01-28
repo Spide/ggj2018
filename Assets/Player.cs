@@ -6,9 +6,12 @@ public class Player : MonoBehaviour {
 
 	bool fieldEnabled = false;
 	float fieldTimer = 0;
+
+	private BearAnim _anim;
 	// Use this for initialization
-	void Start () {
-		
+	void Start ()
+	{
+		_anim = GetComponent<BearAnim>();
 	}
 	
 	// Update is called once per frame
@@ -51,5 +54,6 @@ public class Player : MonoBehaviour {
 
 	public void respawn(Vector2 spawnPoint){
 		transform.position = spawnPoint;
+		_anim.state = BearAnimState.Idle;
 	}
 }

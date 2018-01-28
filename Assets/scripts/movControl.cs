@@ -36,6 +36,21 @@ public class movControl : MonoBehaviour
 	private StepsDust _dust;
 	private float _dustTimer = 0;
 
+	private bool _isPicking;
+	public bool IsPicking
+	{
+		get { return _isPicking; }
+		set
+		{
+			if (value == _isPicking) return;
+			_isPicking = value;
+			if (value)
+			{
+				_anim.state = BearAnimState.Praying;
+			}
+		}
+	}
+
 	void Awake()
 	{
 		_rb = GetComponent<Rigidbody2D>();
@@ -139,7 +154,7 @@ public class movControl : MonoBehaviour
 
 		if (_rb.velocity.magnitude < 0.01f && _grounded)
 		{
-			_anim.state = BearAnimState.Idle;
+			_anim.state = _isPicking ? BearAnimState.Praying : BearAnimState.Idle;
 		}
 		else if (_grounded)
 		{
@@ -168,5 +183,6 @@ public class movControl : MonoBehaviour
 	public void justDied()
 	{
 		_justDied = 1;
+		_anim.state = BearAnimState.Dying;
 	}
 }
