@@ -79,15 +79,17 @@ public class PickupPoint : MonoBehaviour
 
 	void OnTriggerEnter2D (Collider2D coll)
 	{
-		if (coll.gameObject.tag == "Player") {
+		if (coll.gameObject.CompareTag("Player")) {
 			startPicking ();
+			coll.gameObject.GetComponent<movControl>().IsPicking = true;
 		}
 	}
 
 	void OnTriggerExit2D (Collider2D coll)
 	{
-		if (coll.gameObject.tag == "Player") {
+		if (coll.gameObject.CompareTag("Player")) {
 			endPicking ();
+			coll.gameObject.GetComponent<movControl>().IsPicking = false;
 		}
 	}
 }

@@ -3,5 +3,7 @@
 	Idle,
 	Running,
 	JumpUp,
-	JumpDown
+	JumpDown,
+	Dying,
+	Praying
 }
