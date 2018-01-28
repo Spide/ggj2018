@@ -4,4 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/scenes/intro.unity
+    guid: c9bd820fdd406f74595597f81c7ee06f
+  - enabled: 1
+    path: Assets/scenes/arkanoid.unity
+    guid: 435befdca3d7b4f9aa058971a0d7c059
+  - enabled: 1
+    path: Assets/scenes/testscene.unity
+    guid: 35b96e65aa921cb4683a545fe18ca58a
