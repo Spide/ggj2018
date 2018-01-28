@@ -13,7 +13,7 @@ public class GroundPopulator : MonoBehaviour
 		for (var i = 0; i < 30; i++)
 		{
 			var p = Instantiate(pr, transform);
-			p.transform.localPosition = new Vector3(0,0.42f*(i-12f));
+			p.transform.localPosition = new Vector3(0.42f*(i-12f),-0.42f);
 		}
 	}
 	

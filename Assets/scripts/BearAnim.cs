@@ -31,6 +31,8 @@ public class BearAnim : MonoBehaviour
 
 	[SerializeField] private Sprite[] idleAnim;
 	[SerializeField] private Sprite[] runAnim;
+	[SerializeField] private Sprite[] jumpUpAnim;
+	[SerializeField] private Sprite[] jumpDownAnim;
 
 	[SerializeField] private float idleFPS = 3;
 	[SerializeField] private float runFPS = 10;
@@ -44,7 +46,9 @@ public class BearAnim : MonoBehaviour
 		dict = new Dictionary<BearAnimState, Sprite[]>
 		{
 			{BearAnimState.Idle, idleAnim},
-			{BearAnimState.Running, runAnim}
+			{BearAnimState.Running, runAnim},
+			{BearAnimState.JumpUp, jumpUpAnim},
+			{BearAnimState.JumpDown, jumpDownAnim}
 		};
 
 		state = BearAnimState.Idle;
@@ -60,7 +64,7 @@ public class BearAnim : MonoBehaviour
 
 		_animTime += Time.deltaTime;
 
-		var fps = 0f;
+		float fps;
 		switch (_state)
 		{
 			case BearAnimState.Idle:
@@ -70,7 +74,7 @@ public class BearAnim : MonoBehaviour
 				fps = runFPS;
 				break;
 			default:
-				fps = 0;
+				fps = 1;
 				break;
 		}
 

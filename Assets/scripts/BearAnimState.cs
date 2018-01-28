@@ -1,5 +1,7 @@
-﻿
-	public enum BearAnimState
-	{
-		Idle,Running,Jumping
-	}
+﻿public enum BearAnimState
+{
+	Idle,
+	Running,
+	JumpUp,
+	JumpDown
+}
