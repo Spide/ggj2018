@@ -25,6 +25,16 @@ public class Player : MonoBehaviour {
 
 	}
 
+	public void enableForceField(){
+		transform.Find ("ForceField").GetComponent<SpriteRenderer>().enabled = true;
+		transform.Find ("ForceField").GetComponent<CircleCollider2D>().enabled = true;
+	}
+
+	public void disableForceField(){
+		transform.Find ("ForceField").GetComponent<SpriteRenderer>().enabled = false;
+		transform.Find ("ForceField").GetComponent<CircleCollider2D>().enabled = false;
+	}
+
 	public void respawn(Vector2 spawnPoint){
 		transform.position = spawnPoint;
 	}

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
+	public bool isBonus;
 
 	public float defaultBallSpeed = 5;
 	public float speed;
@@ -53,7 +54,11 @@ public class Ball : MonoBehaviour
 			Paddle paddle = coll.gameObject.GetComponent<Paddle> ();
 			paddleBounce (paddle);
 		} else if (coll.gameObject.tag == "BallDeadZone") {
-			requestRestartBall ();
+			if (isBonus) {
+				Destroy (this.gameObject);
+			} else {
+				requestRestartBall ();
+			}
 		}
 		else if (coll.gameObject.tag == "Wall") {
 			
