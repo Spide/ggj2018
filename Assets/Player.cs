@@ -7,6 +7,8 @@ public class Player : MonoBehaviour {
 	bool fieldEnabled = false;
 	float fieldTimer = 0;
 
+	public GameObject forceField;
+
 	private BearAnim _anim;
 	// Use this for initialization
 	void Start ()
@@ -42,14 +44,14 @@ public class Player : MonoBehaviour {
 	public void enableForceField(){
 		fieldEnabled = true;
 		fieldTimer = 5;
-		transform.Find ("ForceField").GetComponent<SpriteRenderer>().enabled = true;
-		transform.Find ("ForceField").GetComponent<CircleCollider2D>().enabled = true;
+		forceField.GetComponent<SpriteRenderer>().enabled = true;
+		forceField.GetComponent<CircleCollider2D>().enabled = true;
 	}
 
 	public void disableForceField(){
 		fieldEnabled = false;
-		transform.Find ("ForceField").GetComponent<SpriteRenderer>().enabled = false;
-		transform.Find ("ForceField").GetComponent<CircleCollider2D>().enabled = false;
+		forceField.GetComponent<SpriteRenderer>().enabled = false;
+		forceField.GetComponent<CircleCollider2D>().enabled = false;
 	}
 
 	public void respawn(Vector2 spawnPoint){
