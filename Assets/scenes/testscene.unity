@@ -8127,7 +8127,7 @@ GameObject:
   m_Layer: 0
   m_Name: powerUpPoint (1)
   m_TagString: Untagged
-  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -10552,8 +10552,12 @@ MonoBehaviour:
   - {fileID: 21300000, guid: bbeb40b5ea2af7c4bb4a688975ba88d8, type: 3}
   jumpDownAnim:
   - {fileID: 21300000, guid: 54371b8c88310474ea7dacd7c1930063, type: 3}
+  dyingAnim: []
+  prayingAnim: []
   idleFPS: 3
   runFPS: 24
+  dyingFPS: 10
+  prayingFPS: 10
 --- !u!1 &1564728806
 GameObject:
   m_ObjectHideFlags: 0
@@ -11723,7 +11727,7 @@ GameObject:
   m_Layer: 0
   m_Name: powerUpPoint
   m_TagString: Untagged
-  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
