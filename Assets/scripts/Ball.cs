@@ -19,6 +19,11 @@ public class Ball : MonoBehaviour
 	private bool shooted = false;
 	private bool readyToShoot = true;
 
+	public bool IsKillingAble{
+		get { 
+			return shooted;
+		}
+	}
 
 	private Rigidbody2D _rb;
 
