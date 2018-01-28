@@ -4,14 +4,28 @@
     <e p="C:\Users\Ondra\.Rider2017.2\system\resharper-host\local\Transient\ReSharperHost\v10\SolutionCaches\_ggj2018.1061344015.00" t="ExcludeRecursive" />
     <e p="D:\Projects\Small\GGJ18\GGJ18\ggj2018" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="FollowScript.cs" t="Include" />
         <e p="introScreen" t="Include">
           <e p="IntroScreen.cs" t="Include" />
         </e>
+        <e p="LivesUI.cs" t="Include" />
         <e p="Player.cs" t="Include" />
         <e p="Plugins" t="Include">
+          <e p="Demigiant" t="Include">
+            <e p="DOTween" t="Include">
+              <e p="DOTween43.xml" t="Include" />
+              <e p="DOTween46.xml" t="Include" />
+              <e p="DOTween50.xml" t="Include" />
+              <e p="Examples" t="Include">
+                <e p="Basics.cs" t="Include" />
+                <e p="Sequences.cs" t="Include" />
+              </e>
+              <e p="readme.txt" t="Include" />
+            </e>
+          </e>
           <e p="Editor" t="Include">
             <e p="JetBrains" t="Include">
               <e p="Unity3DRider.cs" t="Include" />
@@ -31,12 +45,15 @@
           <e p="GroundPopulator.cs" t="Include" />
           <e p="HealthPowerUp.cs" t="Include" />
           <e p="Levitating.cs" t="Include" />
+          <e p="Migician.cs" t="Include" />
+          <e p="MigicianWinTrig.cs" t="Include" />
           <e p="movControl.cs" t="Include" />
           <e p="Paddle.cs" t="Include" />
           <e p="PickupPoint.cs" t="Include" />
           <e p="StepsDust.cs" t="Include" />
         </e>
         <e p="SpawnPoint.cs" t="Include" />
+        <e p="TimerUI.cs" t="Include" />
       </e>
       <e p="ggj2018.sln" t="IncludeFlat" />
       <e p="Library" t="ExcludeRecursive" />

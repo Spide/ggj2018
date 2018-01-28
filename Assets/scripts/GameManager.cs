@@ -83,10 +83,12 @@ public class GameManager : MonoBehaviour {
 		} else {
 			// win state
 			Debug.Log("winner");
-
+			FindObjectOfType<Migician>().EndGameEnable();			
 			return;
 		}
 
+		//debug
+		FindObjectOfType<Migician>().EndGameEnable();
 
 		actualPickupPoint.transform.Find("rune").GetComponent<SpriteRenderer> ().sprite = runes [runes.Count - 1];
 
