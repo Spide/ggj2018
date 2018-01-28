@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
 
@@ -10,6 +11,8 @@ public class GameManager : MonoBehaviour {
 	public float timeToFocus;
 	public Vector3 deadPosition;
 	public Vector3 defaultPosition;
+
+	public float timeToEnd = 120f;
 
 	public static GameManager instance;
 
@@ -130,6 +133,10 @@ public class GameManager : MonoBehaviour {
 
 	}
 
+	private void timeIsUp(){
+		
+	}
+
 
 	// Update is called once per frame
 	void Update () {
@@ -161,7 +168,11 @@ public class GameManager : MonoBehaviour {
 		}
 
 
+		timeToEnd -= Time.deltaTime;
 
+		if(timeToEnd <= 0){
+			timeIsUp ();
+		}
 	}
 
 
