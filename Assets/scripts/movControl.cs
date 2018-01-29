@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using DG.Tweening;
+using UnityEngine;
 
 public class movControl : MonoBehaviour
 {
@@ -200,6 +201,9 @@ public class movControl : MonoBehaviour
 		_rb.velocity = new Vector2(_rb.velocity.x/4, _rb.velocity.y);
 		_anim.state = BearAnimState.Dying;
 		damagePickup.Play();
+
+		var t = Camera.main.transform.DOShakePosition(0.9f, 0.1f,20,90f,false,false);
+		t.timeScale = 7;
 		print("JUST DIED");
 	}
 }

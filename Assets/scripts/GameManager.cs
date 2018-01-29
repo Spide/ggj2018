@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class GameManager : MonoBehaviour {
-
+public class GameManager : MonoBehaviour
+{
 	public float defaultCameraSize;
 
 	public bool focus;
@@ -34,148 +35,160 @@ public class GameManager : MonoBehaviour {
 	private bool powerupAvailable = false;
 	private float nextPowerUpTimeer = 5;
 
+	public Text EndGameText;
+
 	// Use this for initialization
-	void Awake () {
+	void Awake()
+	{
+		players = new List<Player>();
 
-		players = new List<Player> ();
+		playersDead = new Dictionary<Player, Ball>();
 
-		playersDead = new Dictionary<Player, Ball> ();
+		spawnPoints = new List<Transform>();
 
-		spawnPoints = new List<Transform> ();
+		powerUpPoints = new List<Transform>();
 
-		powerUpPoints = new List<Transform> ();
-
-		pickupPoints = new List<PickupPoint> ();
+		pickupPoints = new List<PickupPoint>();
 
 		instance = this;
-
-
 	}
 
-	void Start () {
-
-		foreach(PickupPoint point in pickupPoints){
-			point.disablePoint ();
+	void Start()
+	{
+		foreach (PickupPoint point in pickupPoints)
+		{
+			point.disablePoint();
 		}
 
-		chooseNextPickupPoint ();
+		chooseNextPickupPoint();
 
 		//activateNewPowerUp (powerUps[Random.Range(0, powerUps.Count-1)]);
-
-
 	}
 
 
-
-	public void EndGame(string winner, string reason){
-
+	public void EndGame(string winner, string reason)
+	{
 		string finaLText = "Winner is: " + winner + "" + " \n" + reason;
-
-		var text = GameObject.Find ("EndGameText").GetComponent<UnityEngine.UI.Text> ();
-		text.enabled = true;
-		text.text = finaLText;
+		EndGameText.enabled = true;
+		EndGameText.text = finaLText;
 		print(finaLText);
+		StartCoroutine("FinishGame");
+	}
+
+	private IEnumerator FinishGame()
+	{
+		yield return new WaitForSeconds(3f);
+		SceneManager.LoadScene("intro");
 	}
 
 
-	public void chooseNextPickupPoint(){
+	public void chooseNextPickupPoint()
+	{
+		if (actualPickupPoint == null)
+		{
+			actualPickupPoint = pickupPoints[Random.Range(0, pickupPoints.Count - 1)];
+		}
+		else if (pickupPoints.Count >= 1)
+		{
+			PickupPoint farest = pickupPoints[0];
 
-		if (actualPickupPoint == null) {
-			actualPickupPoint = pickupPoints [Random.Range (0, pickupPoints.Count - 1)];
-
-		} else if (pickupPoints.Count >= 1) {
-			PickupPoint farest = pickupPoints [0];
-
-			foreach (PickupPoint point in pickupPoints) {
-				if (Vector2.Distance (actualPickupPoint.transform.position, farest.transform.position) < Vector2.Distance (point.transform.position, actualPickupPoint.transform.position)) {
+			foreach (PickupPoint point in pickupPoints)
+			{
+				if (Vector2.Distance(actualPickupPoint.transform.position, farest.transform.position) <
+				    Vector2.Distance(point.transform.position, actualPickupPoint.transform.position))
+				{
 					farest = point;
 				}
 			}
 
 			actualPickupPoint = farest;
-		} else {
+		}
+		else
+		{
 			// win state
-			FindObjectOfType<Migician>().EndGameEnable();			
+			FindObjectOfType<Migician>().EndGameEnable();
 			return;
 		}
 
 		//debug
-		FindObjectOfType<Migician>().EndGameEnable();
+		//FindObjectOfType<Migician>().EndGameEnable();
 
-		actualPickupPoint.transform.Find("rune").GetComponent<SpriteRenderer> ().sprite = runes [runes.Count - 1];
+		actualPickupPoint.transform.Find("rune").GetComponent<SpriteRenderer>().sprite = runes[runes.Count - 1];
 
-		runes.RemoveAt (runes.Count-1);
+		runes.RemoveAt(runes.Count - 1);
 
-		actualPickupPoint.activatePoint ();
+		actualPickupPoint.activatePoint();
 	}
 
-	public void powerupPicked(PowerUp powerUp){
-
+	public void powerupPicked(PowerUp powerUp)
+	{
 		powerupAvailable = false;
 		nextPowerUpTimeer = 5;
 	}
 
-	public void activateNewPowerUp(PowerUp powerUp){
-
+	public void activateNewPowerUp(PowerUp powerUp)
+	{
 		powerupAvailable = true;
-		GameObject pow = GameObject.Instantiate (powerUp.gameObject);
-		pow.transform.position = powerUpPoints [Random.Range (0, powerUpPoints.Count-1)].position;
-
-
-
+		GameObject pow = Instantiate(powerUp.gameObject);
+		pow.transform.position = powerUpPoints[Random.Range(0, powerUpPoints.Count - 1)].position;
 	}
 
-	public void addSpawnPoint(Transform point){
-		spawnPoints.Add (point);
+	public void addSpawnPoint(Transform point)
+	{
+		spawnPoints.Add(point);
 	}
 
 
-	public void addPickupPoint(PickupPoint point){
-		pickupPoints.Add (point);
+	public void addPickupPoint(PickupPoint point)
+	{
+		pickupPoints.Add(point);
 	}
 
-	public void addPowerUpSpawnPoint(Transform point){
-		powerUpPoints.Add (point);
+	public void addPowerUpSpawnPoint(Transform point)
+	{
+		powerUpPoints.Add(point);
 	}
 
-	public void finishedPickupPoint(PickupPoint point){
-
-		pickupPoints.Remove (point);
-		point.disablePoint ();
-		chooseNextPickupPoint ();
-
-
+	public void finishedPickupPoint(PickupPoint point)
+	{
+		pickupPoints.Remove(point);
+		point.disablePoint();
+		chooseNextPickupPoint();
 	}
 
-	private void timeIsUp(){
-		EndGame ("Demon" , "Bear is slow!");
+	private void timeIsUp()
+	{
+		EndGame("Demon", "Bear is slow!");
 	}
 
 
 	// Update is called once per frame
-	void Update () {
-
-		if (focus) {
+	void Update()
+	{
+		if (focus)
+		{
 			timeToFocus -= Time.deltaTime;
-			if (timeToFocus <= 0) {
-
-				foreach (Player p in playersDead.Keys) {
-					
-					p.respawn (spawnPoints [Random.Range (0, spawnPoints.Count - 1)].position);
-					playersDead [p].resetBall ();
+			if (timeToFocus <= 0)
+			{
+				foreach (Player p in playersDead.Keys)
+				{
+					p.respawn(spawnPoints[Random.Range(0, spawnPoints.Count - 1)].position);
+					playersDead[p].resetBall();
 				}
 
-				playersDead.Clear ();
-					
+				playersDead.Clear();
+
 				Time.timeScale = 1f;
 
-				focus = false; 
-			} 
+				focus = false;
+			}
 		}
 
-		if (!powerupAvailable) {
-			if(nextPowerUpTimeer <= 0){
-				activateNewPowerUp ( powerUps[Random.Range(0, powerUps.Count-1)]);
+		if (!powerupAvailable)
+		{
+			if (nextPowerUpTimeer <= 0)
+			{
+				activateNewPowerUp(powerUps[Random.Range(0, powerUps.Count - 1)]);
 			}
 
 			nextPowerUpTimeer -= Time.deltaTime;
@@ -184,20 +197,21 @@ public class GameManager : MonoBehaviour {
 
 		timeToEnd -= Time.deltaTime;
 
-		if(timeToEnd <= 0){
-			timeIsUp ();
+		if (timeToEnd <= 0)
+		{
+			timeIsUp();
 		}
 	}
 
 
-
-	public void onDead(Player player, Ball byBall){
+	public void onDead(Player player, Ball byBall)
+	{
 		//defaultCameraSize = Camera.main.orthographicSize;
 		//defaultPosition = Camera.main.gameObject.transform.position;
 		//deadPosition = player.transform.position;
-		if(!playersDead.ContainsKey(player)){
-
-			playersDead.Add (player, byBall);
+		if (!playersDead.ContainsKey(player))
+		{
+			playersDead.Add(player, byBall);
 
 			//Camera.main.orthographicSize = defaultCameraSize - 0.2f;
 			Time.timeScale = 0.2f;
@@ -205,9 +219,5 @@ public class GameManager : MonoBehaviour {
 			focus = true;
 			timeToFocus = 0.2f;
 		}
-
 	}
-		
-
-
 }

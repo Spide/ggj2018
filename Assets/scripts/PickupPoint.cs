@@ -9,7 +9,7 @@ public class PickupPoint : MonoBehaviour
 	public Sprite defaultSprite;
 	public Sprite pickedSprite;
 
-	private float timeToPick = 2f;
+	private float timeToPick = 1f;
 	// Use this for initialization
 	void Awake ()
 	{
@@ -19,7 +19,7 @@ public class PickupPoint : MonoBehaviour
 	}
 
 	public void activatePoint(){
-		timeToPick = 2f;
+		timeToPick = 1f;
 		//GetComponent<SpriteRenderer> ().enabled = true;
 		transform.localScale = Vector2.one * 1.2f;
 

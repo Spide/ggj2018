@@ -1,21 +1,20 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class LivesUI : MonoBehaviour {
 
-	public Text self;
+	private Text self;
 
-	public Player player;
+	private Player player;
 	// Use this for initialization
-	void Start () {
-		
+	void Start ()
+	{
+		self = GetComponent<Text>();
+		player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-
 		self.text = "Lives: " + player.lives;
 	}
 }

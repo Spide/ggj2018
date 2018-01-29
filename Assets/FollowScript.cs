@@ -2,16 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FollowScript : MonoBehaviour {
-
+public class FollowScript : MonoBehaviour
+{
 	public Transform follow;
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
+
 	// Update is called once per frame
-	void Update () {
-		this.transform.position = follow.position;
+	void Update()
+	{
+		var lc = transform.localPosition;
+		var tp = follow.position;
+		lc.x = tp.x;
+		lc.y = tp.y;
+		lc.z = -1f;
+		transform.localPosition = lc;
 	}
 }

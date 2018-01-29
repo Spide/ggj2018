@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,7 +8,8 @@ public class MigicianWinTrig : MonoBehaviour {
 	
 	private void OnTriggerEnter2D(Collider2D other)
 	{
-//		SceneManager.LoadScene("EndAnimScene");
+		var t = Camera.main.transform.DOShakePosition(0.9f, 0.1f,20,90f,false,false);
+		t.timeScale = 1.5f;
 		GameManager.instance.EndGame("Bear","You did it!");
 	}
 	

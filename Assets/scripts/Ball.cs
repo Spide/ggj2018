@@ -16,19 +16,33 @@ public class Ball : MonoBehaviour
 
 	public float paddleDragMultiplier = 10;
 
-	private bool shooted = false;
-	private bool readyToShoot = true;
+	private bool _shooted = false;
+	private bool _readyToShoot = true;
 
+	private Vector3 _spawnPoint = Vector3.up*0.219f; 
+	
 	public bool IsKillingAble{
 		get { 
-			return shooted;
+			return _shooted;
 		}
 	}
 
 	private Rigidbody2D _rb;
 
+	private CircleCollider2D _colider;
+	private SpriteRenderer _sprite;
+	private Transform _realParent;
+	
 	// Use this for initialization
-	void Start ()
+	private void Awake()
+	{
+		_rb = GetComponent<Rigidbody2D>();
+		_colider = GetComponent<CircleCollider2D>();
+		_sprite = GetComponent<SpriteRenderer>();
+		_realParent = transform.parent;
+	}
+
+	private void Start()
 	{
 		speed = defaultBallSpeed;
 
@@ -38,16 +52,14 @@ public class Ball : MonoBehaviour
 		if (bottomPaddle == null)
 			bottomPaddle = GameObject.Find ("PaddleBottom").gameObject.GetComponent<Paddle>();
 
-		_rb = GetComponent<Rigidbody2D>();
+		resetBall();
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
-		if (!shooted) {
-			transform.position = bottomPaddle.BallSpawnPoint.position;
-
-			if (readyToShoot && Input.GetMouseButtonUp(0)) {
+		if (!_shooted) {
+			if (_readyToShoot && Input.GetMouseButtonUp(0)) {
 				shoot (bottomPaddle);
 			}
 		}
@@ -55,17 +67,19 @@ public class Ball : MonoBehaviour
 
 	void OnCollisionEnter2D (Collision2D coll)
 	{
-		if (coll.gameObject.tag == "Paddle") {
+		if (!_shooted) return;
+		
+		if (coll.gameObject.CompareTag("Paddle")) {
 			Paddle paddle = coll.gameObject.GetComponent<Paddle> ();
 			paddleBounce (paddle);
-		} else if (coll.gameObject.tag == "BallDeadZone") {
+		} else if (coll.gameObject.CompareTag("BallDeadZone")) {
 			if (isBonus) {
 				Destroy (this.gameObject);
 			} else {
 				requestRestartBall ();
 			}
 		}
-		else if (coll.gameObject.tag == "Wall") {
+		else if (coll.gameObject.CompareTag("Wall")) {
 
 		}else if (coll.gameObject.name == "ForceField") {
 			if (isBonus) {
@@ -111,6 +125,9 @@ public class Ball : MonoBehaviour
 
 	private void shoot (Paddle fromPaddle)
 	{
+		transform.SetParent(_realParent);
+		_colider.enabled = true;
+		_readyToShoot = false;
 		// add velocity of paddle
 		float X = fromPaddle.FakeVelocity * velocityDragMultiplier;
 
@@ -120,14 +137,12 @@ public class Ball : MonoBehaviour
 			Y = -speed;
 		} 
 
-		GetComponent<Rigidbody2D> ().velocity = new Vector2 (X, Y).normalized * speed;
-		shooted = true;
+		_rb.velocity = new Vector2 (X, Y).normalized * speed;
+		_shooted = true;
 
-		//Debug.Log ("shooted :" + fromPaddle.transform.position + " BALL velocity:" + transform.GetComponent<Rigidbody2D>().velocity + " Fake paddle velocity:" + fromPaddle.FakeVelocity);
+		Debug.Log ("shooted :" + fromPaddle.transform.position + " BALL velocity:" + _rb.velocity + " Fake paddle velocity:" + fromPaddle.FakeVelocity);
 
 	}
-
-	Color actualColor;
 
 	public void requestRestartBall(){
 
@@ -135,34 +150,44 @@ public class Ball : MonoBehaviour
 			Destroy (this.gameObject);
 			return;
 		}
-			
-
-		actualColor = GetComponent<SpriteRenderer> ().color;
+		_colider.enabled = false;		
+		transform.SetParent(bottomPaddle.transform);
+		transform.localPosition = _spawnPoint;
 		
-		GetComponent<SpriteRenderer> ().color = new Color (actualColor.r, actualColor.g, actualColor.a, 0.3f);
-		transform.position = bottomPaddle.BallSpawnPoint.position;
-		GetComponent<Rigidbody2D> ().velocity = new Vector2 (0f, 0);
-		shooted = false;
-		readyToShoot = false;
+		_rb.velocity = Vector2.zero;
+		_shooted = false;
+		_readyToShoot = false;
 
 		StartCoroutine("pendingRestart");
 	}
 
-	IEnumerator pendingRestart() {
-		yield return new WaitForSeconds(3);
-
+	IEnumerator pendingRestart()
+	{
+		var c = _sprite.color;
+		c.a = 0.0f;
+		_sprite.color = c;
+		const int numSteps = 3;
+		for (int i = 0; i < numSteps; i++)
+		{
+			yield return new WaitForSeconds(3.0f/numSteps);
+			c.a += 1.0f/numSteps;
+			_sprite.color = c;
+		}
+		c.a = 1.0f;
+		_sprite.color = c;
 		resetBall ();
 	}
 
 	public void resetBall ()
 	{
-		actualColor = GetComponent<SpriteRenderer> ().color;
+		transform.SetParent(bottomPaddle.transform);
+		transform.localPosition = _spawnPoint;
+		
+		_rb.velocity = Vector2.zero;
+		_shooted = false;
+		_readyToShoot = true;
 
-		GetComponent<SpriteRenderer> ().color = new Color (actualColor.r, actualColor.g, actualColor.a, 1f);
-		transform.position = bottomPaddle.BallSpawnPoint.position;
-		GetComponent<Rigidbody2D> ().velocity = new Vector2 (0f, 0);
-		shooted = false;
-		readyToShoot = true;
+		_colider.enabled = false;
 	}
 
 

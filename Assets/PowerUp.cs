@@ -27,10 +27,10 @@ public abstract class PowerUp : MonoBehaviour {
 	{
 		//Debug.Log ("triggered"+coll.gameObject.name);
 
-		if (coll.gameObject.tag == "Player") {
+		if (coll.gameObject.CompareTag("Player")) {
 			pickupBy (coll.gameObject.GetComponent<Player> ());
 		}
-		else if (coll.gameObject.tag == "Ball") {
+		else if (coll.gameObject.CompareTag("Ball")) {
 			pickupBy (coll.gameObject.GetComponent<Ball> ());
 		}
 

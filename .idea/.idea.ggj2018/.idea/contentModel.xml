@@ -39,8 +39,10 @@
           <e p="BallPowerUp.cs" t="Include" />
           <e p="BearAnim.cs" t="Include" />
           <e p="BearAnimState.cs" t="Include" />
+          <e p="CameraScript.cs" t="Include" />
           <e p="CloudMovement.cs" t="Include" />
           <e p="DustParticle.cs" t="Include" />
+          <e p="FrameAnim.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="GroundPopulator.cs" t="Include" />
           <e p="HealthPowerUp.cs" t="Include" />
