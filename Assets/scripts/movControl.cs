@@ -61,7 +61,6 @@ public class movControl : MonoBehaviour
 	{
 		_rb = GetComponent<Rigidbody2D>();
 		_anim = GetComponent<BearAnim>();
-	
 	}
 
 	public void RunePickedUp()
@@ -78,7 +77,12 @@ public class movControl : MonoBehaviour
 	void Update()
 	{
 		if (_justDied > 0) return;
+		var wasgrounded = _grounded;
 		_grounded = Physics2D.OverlapCircle(GroundCheck.position, groundRadius, WhatIsGround);
+		if (_grounded && !wasgrounded)
+		{
+	//		print("landed");
+		}
 		_touchingWall = Physics2D.OverlapCircle(WallJumpCheckLeft.position, wallJumpRadius, WhatIsGround);
 		if (!_touchingWall)
 		{
@@ -92,6 +96,41 @@ public class movControl : MonoBehaviour
 		{
 			_doubleJumped = false;
 		}
+		
+		//
+		// JUMP 
+  		//
+		if (Input.GetButtonDown(_kUp))
+		{
+			print("_grounded "+_grounded+" _hasJump:"+_hasJumped+" doublejump:"+_doubleJumped);
+		}
+
+		
+		if ( _grounded  && _hasJumped > 0.3f && Input.GetButton(_kUp))
+		{
+			print("jump");
+			_hasJumped = 0;
+			_rb.velocity = new Vector2 (_rb.velocity.x, JumpVelocity);
+			jumpSound.Play();
+		}else if (!_grounded && !_doubleJumped && _hasJumped > 0.06f && Input.GetButtonDown(_kUp))
+		{
+			print("doublejump");
+			_hasJumped = 0;
+			_doubleJumped = true;
+			_rb.velocity = new Vector2(_rb.velocity.x, DoubleJumpVelocity);
+			jumpSound.Play();
+		}
+		else if (_touchingWall && !_hasWallJump && Input.GetButtonDown(_kUp))
+		{
+			_hasWallJump = true;
+			_rb.velocity = new Vector2(-_rb.velocity.x, JumpVelocity);
+			jumpSound.Play();
+		}
+		else
+		{
+			_hasJumped += Time.deltaTime;
+		}
+
 	}
 
 	private void DoFlip()
@@ -141,29 +180,6 @@ public class movControl : MonoBehaviour
 		//JUMP
 
 		
-		if ( _grounded  && _hasJumped > 0.3f && Input.GetButton(_kUp))
-		{
-			_hasJumped = 0;
-			_rb.velocity = new Vector2 (_rb.velocity.x, JumpVelocity);
-			jumpSound.Play();
-		}else if (!_doubleJumped && _hasJumped > 0.1f && Input.GetButtonDown(_kUp))
-		{
-			_hasJumped = 0;
-			_doubleJumped = true;
-			_rb.velocity = new Vector2(_rb.velocity.x, DoubleJumpVelocity);
-			jumpSound.Play();
-		}
-		else if (_touchingWall && !_hasWallJump && Input.GetButtonDown(_kUp))
-		{
-			_hasWallJump = true;
-			_rb.velocity = new Vector2(-_rb.velocity.x, JumpVelocity);
-			jumpSound.Play();
-		}
-		else
-		{
-			_hasJumped += Time.deltaTime;
-		}
-
 
 		//SET ANIM STATE
 
