@@ -28,7 +28,7 @@ public class IntroScreen : MonoBehaviour
 	{
 		yield return new WaitForSeconds(0.4f);
 		SceneManager.LoadScene("arkanoid");
-		SceneManager.LoadScene("testscene", LoadSceneMode.Additive);
+		SceneManager.LoadScene("platformer", LoadSceneMode.Additive);
 	}
 
 	// Update is called once per frame

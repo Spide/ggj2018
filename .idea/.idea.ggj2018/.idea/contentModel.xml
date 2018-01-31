@@ -7,11 +7,6 @@
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="gfx" t="Include">
-          <e p="introScreen" t="Include">
-            <e p="IntroScreen.cs" t="Include" />
-          </e>
-        </e>
         <e p="Plugins" t="Include">
           <e p="Demigiant" t="Include">
             <e p="DOTween" t="Include">
@@ -42,6 +37,7 @@
           <e p="GameManager.cs" t="Include" />
           <e p="GroundPopulator.cs" t="Include" />
           <e p="HealthPowerUp.cs" t="Include" />
+          <e p="IntroScreen.cs" t="Include" />
           <e p="Levitating.cs" t="Include" />
           <e p="LivesUI.cs" t="Include" />
           <e p="Migician.cs" t="Include" />
@@ -61,6 +57,10 @@
             <e p="FrameAnim.cs" t="Include" />
             <e p="SpriteButton.cs" t="Include" />
           </e>
+        </e>
+        <e p="shaders" t="Include">
+          <e p="ImageEff.cs" t="Include" />
+          <e p="my2shader.shader" t="Include" />
         </e>
       </e>
       <e p="ggj2018.sln" t="IncludeFlat" />
