@@ -201,6 +201,18 @@ public class GameManager : MonoBehaviour
 		{
 			timeIsUp();
 		}
+
+		if (Input.GetButtonDown("Cancel"))
+		{
+			if (Time.timeScale < 1)
+			{
+				Time.timeScale = 1f;
+			}
+			else
+			{
+				Time.timeScale = 0f;
+			}
+		}
 	}
 
 

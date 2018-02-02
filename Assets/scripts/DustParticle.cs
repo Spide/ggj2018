@@ -10,7 +10,7 @@ public class DustParticle : MonoBehaviour
 	private SpriteRenderer sp;
 	private void OnEnable()
 	{
-		v = Vector3.up*(0.018f+Random.Range(0.002f,0.01f));
+		v = Vector3.up*(1f+Random.Range(0.12f,0.6f));
 		sp = GetComponent<SpriteRenderer>();
 		var c = sp.color;
 		c.a = Random.Range(0.6f, 1f);
@@ -22,8 +22,8 @@ public class DustParticle : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		v.y -= 0.1f * Time.deltaTime;
-		transform.localPosition += v;
+		v.y -= 6f * Time.deltaTime;
+		transform.localPosition += v*Time.deltaTime;
 
 		var c = sp.color;
 		c.a -= 1.8f*Time.deltaTime;
