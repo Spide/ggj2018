@@ -227,6 +227,7 @@ public class GameManager : MonoBehaviour
 
     public void toMenu()
     {
+        Destroy(gameObject);
         SceneManager.LoadScene("intro");
     }
 
