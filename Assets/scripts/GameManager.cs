@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
 	public Vector3 deadPosition;
 	public Vector3 defaultPosition;
 
+    public Transform PauseMenu;
+
 	public float timeToEnd = 120f;
 
 	public static GameManager instance;
@@ -204,19 +206,32 @@ public class GameManager : MonoBehaviour
 
 		if (Input.GetButtonDown("Cancel"))
 		{
-			if (Time.timeScale < 1)
-			{
-				Time.timeScale = 1f;
-			}
-			else
-			{
-				Time.timeScale = 0f;
-			}
-		}
+            pause();
+
+        }
 	}
 
+    public void pause()
+    {
+        if (Time.timeScale < 1)
+        {
+            Time.timeScale = 1f;
+            PauseMenu.gameObject.SetActive(false);
+        }
+        else
+        {
+            Time.timeScale = 0f;
+            PauseMenu.gameObject.SetActive(true);
+        }
+    }
 
-	public void onDead(Player player, Ball byBall)
+    public void toMenu()
+    {
+        SceneManager.LoadScene("intro");
+    }
+
+
+    public void onDead(Player player, Ball byBall)
 	{
 		//defaultCameraSize = Camera.main.orthographicSize;
 		//defaultPosition = Camera.main.gameObject.transform.position;
