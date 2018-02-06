@@ -18,7 +18,7 @@ public class Ball : MonoBehaviour
 	private bool _shooted = false;
 	private bool _readyToShoot = true;
 
-	private Vector3 _spawnPoint = Vector3.up*0.219f; 
+	private Vector3 _spawnPoint = -(Vector3.up*0.219f); 
 	
 	public bool IsKillingAble{
 		get { 
@@ -150,7 +150,7 @@ public class Ball : MonoBehaviour
 			return;
 		}
 		_colider.enabled = false;		
-		transform.SetParent(bottomPaddle.transform);
+		transform.SetParent(topPaddle.transform);
 		transform.localPosition = _spawnPoint;
 		
 		_rb.velocity = Vector2.zero;
@@ -179,7 +179,7 @@ public class Ball : MonoBehaviour
 
 	public void resetBall ()
 	{
-		transform.SetParent(bottomPaddle.transform);
+		transform.SetParent(topPaddle.transform);
 		transform.localPosition = _spawnPoint;
 		
 		_rb.velocity = Vector2.zero;
