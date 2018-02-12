@@ -13,7 +13,7 @@ public class Ball : MonoBehaviour
 
 	public float velocityDragMultiplier = 5;
 
-	public float paddleDragMultiplier = 10;
+	public float paddleDragMultiplier = 5;
 
 	private bool _shooted = false;
 	private bool _readyToShoot = true;
@@ -103,15 +103,15 @@ public class Ball : MonoBehaviour
 		float X = 0;
 
 		// calc angle
-		if (Mathf.Abs((paddle.transform.position - transform.position).x) > 1.0f)
-		{
+	//	if (Mathf.Abs((paddle.transform.position - transform.position).x) > 1.0f)
+//		{
 			X = -(paddle.transform.position - transform.position).x * paddleDragMultiplier;
-		}
-		else
+	//	}
+	/*	else
 		{
 			// add velocity of paddle
 			X = v.x + (paddle.FakeVelocity * velocityDragMultiplier);
-		}
+		}*/
 
 		float Y = speed;
 

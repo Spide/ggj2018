@@ -9,6 +9,8 @@ public class IntroScreen : MonoBehaviour
 
 	public SpriteRenderer logo;
 
+	public GameObject tutorial;
+
 	// Use this for initialization
 	void Start()
 	{
@@ -38,6 +40,11 @@ public class IntroScreen : MonoBehaviour
 		black.color = new Color(0f, 0f, 0f, 0f);
 		StartCoroutine("DoSwitchStory");
 		black.DOFade(1f, 0.4f);
+	}
+
+	public void DOTutorial()
+	{
+		tutorial.SetActive(true);
 	}
 
 	private IEnumerator DoSwitchStory()
